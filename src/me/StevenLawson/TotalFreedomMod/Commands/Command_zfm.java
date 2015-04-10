@@ -54,7 +54,7 @@ public class Command_tfm extends TFM_Command
             return true;
         }
 
-        playerMsg("TotalFreedomMod for 'Total Freedom', the original all-op server.", ChatColor.GOLD);
+        playerMsg("ZaramaFreedomMod for 'ZaramaFreedomMod', the original ZaramaFreedom server.", ChatColor.GOLD);
         playerMsg(String.format("Version "
                 + ChatColor.BLUE + "%s.%s" + ChatColor.GOLD + ", built "
                 + ChatColor.BLUE + "%s" + ChatColor.GOLD + " by "
@@ -65,8 +65,7 @@ public class Command_tfm extends TFM_Command
                 TotalFreedomMod.buildCreator), ChatColor.GOLD);
         playerMsg("Running on " + TFM_ConfigEntry.SERVER_NAME.getString() + ".", ChatColor.GOLD);
         playerMsg("Created by Alex33856", ChatColor.GOLD);
-        playerMsg("Visit " + ChatColor.AQUA + "ZaramaFreedom.proboards.com" + ChatColor.GREEN + " for more information.", ChatColor.GREEN);
-
-        return true;
-    }
+        playerMsg("Visit " + ChatColor.AQUA + "ZaramaFreedom.proboards.com" + ChatColor.GREEN + " for more information.", ChatColor.GREEN);        
+        playerMsg(ChatColor.BLUE + "For More Info visit AlexFreedomMod.github.io/ZaramaFreedomMod " + ChatColor.RED + sender.getname)
+        return true
 }
