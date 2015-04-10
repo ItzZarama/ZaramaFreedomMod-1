@@ -14,9 +14,6 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-/*
- * See https://github.com/TotalFreedom/License - This file may not be edited or removed.
- */
 @CommandPermissions(level = AdminLevel.ALL, source = SourceType.BOTH)
 @CommandParameters(description = "Shows information about TotalFreedomMod or reloads it", usage = "/<command> [reload]")
 public class Command_tfm extends TFM_Command
@@ -54,7 +51,7 @@ public class Command_tfm extends TFM_Command
             return true;
         }
 
-        playerMsg("TotalFreedomMod for 'Total Freedom', the original all-op server.", ChatColor.GOLD);
+        playerMsg("ZaramaFreedomMod for 'ZaramaFreedom, A All Op server", ChatColor.GOLD);
         playerMsg(String.format("Version "
                 + ChatColor.BLUE + "%s.%s" + ChatColor.GOLD + ", built "
                 + ChatColor.BLUE + "%s" + ChatColor.GOLD + " by "
