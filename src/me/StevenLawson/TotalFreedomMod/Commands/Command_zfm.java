@@ -14,6 +14,9 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
+/*
+ * See https://github.com/TotalFreedom/License - This file may not be edited or removed.
+ */
 @CommandPermissions(level = AdminLevel.ALL, source = SourceType.BOTH)
 @CommandParameters(description = "Shows information about TotalFreedomMod or reloads it", usage = "/<command> [reload]")
 public class Command_tfm extends TFM_Command
@@ -51,7 +54,7 @@ public class Command_tfm extends TFM_Command
             return true;
         }
 
-        playerMsg("ZaramaFreedomMod for 'ZaramaFreedom, A All Op server", ChatColor.GOLD);
+        playerMsg("ZaramaFreedomMod for 'ZaramaFreedomMod', the original ZaramaFreedom server.", ChatColor.GOLD);
         playerMsg(String.format("Version "
                 + ChatColor.BLUE + "%s.%s" + ChatColor.GOLD + ", built "
                 + ChatColor.BLUE + "%s" + ChatColor.GOLD + " by "
@@ -62,8 +65,7 @@ public class Command_tfm extends TFM_Command
                 TotalFreedomMod.buildCreator), ChatColor.GOLD);
         playerMsg("Running on " + TFM_ConfigEntry.SERVER_NAME.getString() + ".", ChatColor.GOLD);
         playerMsg("Created by Alex33856", ChatColor.GOLD);
-        playerMsg("Visit " + ChatColor.AQUA + "ZaramaFreedom.proboards.com" + ChatColor.GREEN + " for more information.", ChatColor.GREEN);
-
-        return true;
-    }
+        playerMsg("Visit " + ChatColor.AQUA + "ZaramaFreedom.proboards.com" + ChatColor.GREEN + " for more information.", ChatColor.GREEN);        
+        playerMsg(ChatColor.BLUE + "For More Info visit AlexFreedomMod.github.io/ZaramaFreedomMod " + ChatColor.RED + sender.getname)
+        return true
 }
