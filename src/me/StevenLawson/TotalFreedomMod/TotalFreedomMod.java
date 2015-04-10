@@ -74,8 +74,10 @@ public class TotalFreedomMod extends JavaPlugin
     @Override
     public void onEnable()
     {
-        TFM_Log.info("Made by Madgeek1450 and DarthSalamon");
+        TFM_Log.info("TFM Made by Darthsalamon and Madgeek");
         TFM_Log.info("Compiled " + buildDate + " by " + buildCreator);
+        TFM_Log.info("You are running Version 2.1 of ZFM.");
+        TFM_Log.info("ZFM Made By Alex33856");
 
         final TFM_Util.MethodTimer timer = new TFM_Util.MethodTimer();
         timer.start();
