@@ -12,19 +12,19 @@ import org.bukkit.entity.Player;
 
 public enum TFM_PlayerRank
 {
-    DEVELOPER("a " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[Dev]"),
-    IMPOSTOR("an " + ChatColor.YELLOW + ChatColor.UNDERLINE + "Impostor", ChatColor.YELLOW.toString() + ChatColor.UNDERLINE + "[IMP]"),
+    DEVELOPER("A " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[Dev]"),
+    IMPOSTOR("An " + ChatColor.YELLOW + ChatColor.UNDERLINE + "Impostor", ChatColor.YELLOW.toString() + ChatColor.UNDERLINE + "[IMP]"),
     NON_OP("a " + ChatColor.GREEN + "Non-OP", ChatColor.GREEN.toString()),
-    OP("an " + ChatColor.RED + "OP", ChatColor.RED + "[OP]"),
-    SUPER("a " + ChatColor.GOLD + "Super Admin", ChatColor.GOLD + "[SA]"),
-    TELNET("a " + ChatColor.DARK_GREEN + "Super Telnet Admin", ChatColor.DARK_GREEN + "[STA]"),
-    SENIOR("a " + ChatColor.LIGHT_PURPLE + "Senior Admin", ChatColor.LIGHT_PURPLE + "[SrA]"),
-    OWNER("the " + ChatColor.BLUE + "Owner", ChatColor.BLUE + "[Owner]"),
+    OP("An " + ChatColor.RED + "OP", ChatColor.RED + "[OP]"),
+    SUPER("A " + ChatColor.GOLD + "Super Admin", ChatColor.GOLD + "[SA]"),
+    TELNET("A " + ChatColor.DARK_GREEN + "Super Telnet Admin", ChatColor.DARK_GREEN + "[STA]"),
+    SENIOR("A " + ChatColor.LIGHT_PURPLE + "Senior Admin", ChatColor.LIGHT_PURPLE + "[SrA]"),
+    OWNER("The " + ChatColor.BLUE + "Owner", ChatColor.BLUE + "[Owner]"),
     CONSOLE("The " + ChatColor.DARK_PURPLE + "Console", ChatColor.DARK_PURPLE + "[Console]"),
-    ZFM_DEVELOPERS("a " + ChatColor.DARK_PURPLE + "Creator of ZFM", ChatColor.DARK_PURPLE + "[Developer]",
-    FOUNDERS("The " + ChatColor.DARK_RED + "Founder Of Zarama Freedom", ChatColor.DARK_RED + "[Founder]",
-    SYSADMIN("A " + ChatColor.GREEN + "System Admin", ChatColor.GREEN + "[SysAdmin]),
-    HELPERS("a " + ChatColor.RED + "Helper", ChatColor.RED + "[Helper];
+    ZFM_DEVELOPERS("a " + ChatColor.DARK_PURPLE + "Creator of ZFM", ChatColor.DARK_PURPLE + "[Developer]"),
+    FOUNDERS("The " + ChatColor.DARK_RED + "Founder Of Zarama Freedom", ChatColor.DARK_RED + "[Founder]"),
+    SYSADMIN("A " + ChatColor.GREEN + "System Admin", ChatColor.GREEN + "[SysAdmin]"),
+    HELPERS("A " + ChatColor.RED + "Helper", ChatColor.RED + "[Helper]");
     private final String loginMessage;
     private final String prefix;
 
