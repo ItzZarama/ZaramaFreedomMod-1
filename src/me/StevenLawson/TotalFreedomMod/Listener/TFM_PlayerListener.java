@@ -871,6 +871,11 @@ public class TFM_PlayerListener implements Listener
             name = ChatColor.GREEN + name;
             TFM_PlayerData.getPlayerData(player).setTag("&8[&aSystem Admin&8]");
         }
+        else if (TFM_Util.HELPERS.contains(player.fetname()))
+        {
+            name = ChatColor.RED + name;
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&cHelper&8]");
+        }
         else if (TFM_AdminList.isSeniorAdmin(player))
         {
             name = ChatColor.LIGHT_PURPLE + name;
