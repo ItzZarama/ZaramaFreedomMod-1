@@ -3,6 +3,6 @@ main: me.StevenLawson.TotalFreedomMod.TotalFreedomMod
 version: 2.1
 description: Plugin for the Zarama Freedom server.
 softdepend: [BukkitTelnet, WorldEdit, Essentials]
-authors: [Alex33856, nooneelse]
+authors: [Madgeek1420, DarthSalamon]
 
 # plugin.yml is no longer used to define commands.
