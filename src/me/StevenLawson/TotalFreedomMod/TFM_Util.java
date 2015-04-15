@@ -72,6 +72,7 @@ public class TFM_Util
     public static final List<String> FOUNDERS = Arrays.asList("ItzZarama", "Marius_nightfire");
     public static final List<String> SYSADMIN = Arrays.asList("NOOE");
     public static final List<String> HELPERS = Arrays.asList("NullOne")
+    public static final List<String> TRYADMINS = Arrays.asList("UnKnownYet", "NoOneYet")
     private static final Random RANDOM = new Random();
     public static String DATE_STORAGE_FORMAT = "EEE, d MMM yyyy HH:mm:ss Z";
     public static final Map<String, ChatColor> CHAT_COLOR_NAMES = new HashMap<String, ChatColor>();
