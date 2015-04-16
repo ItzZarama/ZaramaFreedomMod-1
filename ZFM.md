@@ -6,5 +6,7 @@ Copyrights
 
 (C) ItzZarama 2015 - 2015
 
+(C) DaBoyTM 2015 - 2015
+
 The next release will come soon.
-It is Version ### 2.2!
+It is Version ### 2.4!
