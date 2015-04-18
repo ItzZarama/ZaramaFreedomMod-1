@@ -923,12 +923,12 @@ public class TFM_PlayerListener implements Listener
             {
                 if (TFM_ConfigEntry.ADMIN_ONLY_MODE.getBoolean())
                 {
-                    player.sendMessage(ChatColor.RED + "Server is currently closed to non-superadmins.");
+                    player.sendMessage(ChatColor.RED + "ZaramaFreedom is currently closed to non-superadmins.");
                 }
 
                 if (TotalFreedomMod.lockdownEnabled)
                 {
-                    TFM_Util.playerMsg(player, "Warning: Server is currenty in lockdown-mode, new players will not be able to join!", ChatColor.RED);
+                    TFM_Util.playerMsg(player, "Warning: ZaramaFreedom is currenty in lockdown-mode, new players will not be able to join!", ChatColor.RED);
                 }
             }
         }.runTaskLater(TotalFreedomMod.plugin, 20L * 3L);
