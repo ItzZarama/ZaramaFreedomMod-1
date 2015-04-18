@@ -65,7 +65,7 @@ public class Command_tfm extends TFM_Command
                 TotalFreedomMod.buildCreator), ChatColor.GOLD);
         playerMsg("Running on " + TFM_ConfigEntry.SERVER_NAME.getString() + ".", ChatColor.GOLD);
         playerMsg("Created by Madgeek1450 and Prozza.", ChatColor.GOLD);
-        playerMsg("Visit " + ChatColor.AQUA + "ZaramaFreedom.proboards.com" + ChatColor.GREEN + " for more information.", ChatColor.GREEN);
+        playerMsg("Visit " + ChatColor.AQUA + "http://totalfreedom.boards.net/" + ChatColor.GREEN + " for more information.", ChatColor.GREEN);
 
         return true;
     }
