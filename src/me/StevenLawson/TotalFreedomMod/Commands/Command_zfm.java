@@ -18,5 +18,5 @@ public class Command_zfm extends TFM_Command
         sender.sendMessage(ChatColor.RED + "ZFM Version: v2.4");
         sender.sendMessage(ChatColor.BLUE + "For more info, please visit our forum at http://zaramafreedom.proboards.com/");
         sender.sendMessage(ChatColor.BLUE + "Or contact to one of our Developers :)");
-    }
+        sender.sendMessage(ChatColor.BLUE + "If you would like something added, Please make an Pull request or if you find a issue go to" + ChatColor.GOLD + " http://github.com/AlexFreedomMod/ZaramaFreedomMod/issues"
   }
