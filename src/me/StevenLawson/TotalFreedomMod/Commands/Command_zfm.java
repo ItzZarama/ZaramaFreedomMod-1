@@ -14,7 +14,7 @@ public class Command_zfm extends TFM_Command
     {
         sender.sendMessage(ChatColor.GREEN + "This ZaramaFreedomMod is currently a fork from TotalFreedomMod!");
         sender.sendMessage(ChatColor.GOLD + "To Make your own FreedomMod, visit https://github.com/TotalFreedom/TotalFreedomMod for more info!");
-        sender.sendMessage(ChatColor.PURPLE + "Our Main Developers of this ZFM are Alex3368 and DaBoyTM");
+        sender.sendMessage(ChatColor.PURPLE + "Our Main Developers of this ZFM are Alex333856 and DaBoyTM");
         sender.sendMessage(ChatColor.RED + "ZFM Version: v2.4");
         sender.sendMessage(ChatColor.BLUE + "For more info, please visit our forum at http://zaramafreedom.proboards.com/");
         sender.sendMessage(ChatColor.BLUE + "Or contact to one of our Developers :)");
