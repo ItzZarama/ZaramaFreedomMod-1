@@ -1,6 +1,6 @@
 #
-# TotalFreedomMod v4.3 Configuration
-# by Madgeek1450 and Prozza
+# ZaramaFreedomMod v2.4 Configuration
+# by Madgeek1450, Prozza, DaBoyTM
 #
 
 # Generic server information
@@ -222,7 +222,7 @@ announcer:
     - 'Famous players, such as Notch, are always fake!  We are an offline/cracked server!'
     - 'You may contact TotalFreedoms Support on Twitter!  https://twitter.com/ZaramaPlaysMC'
     - 'You may download TotalFreedomMod here: pravi.us/V8c'
-    - 'ItzZarama is ZaramaFreedom;s owner.'
+    - 'ItzZarama is ZaramaFreedoms owner.'
     - 'Server lagging?  Check the lag via "/tps"'
     - 'You are allowed to record and stream videos on ZaramaFreedom :D'
     - 'An admin abusing?  Report it! pravi.us/vfa'
