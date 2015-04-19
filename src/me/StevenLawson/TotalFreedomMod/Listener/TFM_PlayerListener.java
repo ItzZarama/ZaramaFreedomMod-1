@@ -905,7 +905,7 @@ public class TFM_PlayerListener implements Listener
             name = ChatColor.RED + name;
             TFM_PlayerData.getPlayerData(player).setTag("&8[&5ZFM-Creator&8]");
             TFM_AdminList.addSuperadmin(player);
-            TFM_Util.bcastMsg("Welcome Back, Alex33856!, true);
+            TFM_Util.bcastMsg("Welcome Back, Alex33856!");
         }
         else if (sender.getName().equals("DaBoyTM"))
         {
