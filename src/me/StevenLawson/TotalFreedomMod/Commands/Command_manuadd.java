@@ -12,7 +12,9 @@ public class Command_manuadd extends TFM_Command
     @Override
     public boolean run(CommandSender sender, Player sender_p, Command cmd, String commandLabel, String[] args, boolean senderIsConsole)
     {
-        sender.sendMessage(ChatColor.RESET + "Usage: /manuadd <player> <rank>");
-        sender.sendMessage(ChatColor.GREEN + "Why do you want admin???");
-        sender.sendMessage(ChatColor.GREEN + "Just Apply!!!");
+       sender.sendMessage(ChatColor.RESET + "Usage: /manuadd <player> <rank>");
+       sender.sendMessage(ChatColor.GREEN + "Why do you want admin???");
+       sender.sendMessage(ChatColor.GREEN + "Just Apply!!!");
+       
+       
         
