@@ -33,3 +33,4 @@ public class Command_pc extends TFM_Command
         sender.sendMessage(" ");
         sender.sendMessage(" ");
         sender.sendMessage(" ");
+        sender.sendMessage(ChatColor.RED "Your chat has been cleared!!!!")
