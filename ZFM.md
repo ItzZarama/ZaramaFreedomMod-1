@@ -10,9 +10,13 @@ Copyrights:
 
 Release:
 
-The next release will come soon.
+
 The Next version will be 2.6!
+
 The Current version is 2.5!
+
+The Last Release was 2.4!!!
+
 The Last stable release was well... 2.5 because @AlexFreedom aka me.... broke the player listner
 
 Info:
