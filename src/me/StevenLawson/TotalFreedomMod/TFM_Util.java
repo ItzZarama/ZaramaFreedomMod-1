@@ -68,12 +68,13 @@ public class TFM_Util
     public static final Map<String, EntityType> mobtypes = new HashMap<String, EntityType>();
     // See https://github.com/TotalFreedom/License - None of the listed names may be removed.
     public static final List<String> DEVELOPERS = Arrays.asList("Madgeek1450", "Prozza", "DarthSalmon", "AcidicCyanide", "Wild1145", "WickedGamingUK");
+    // ZaramaFreedomMod License - You can not remove the following people or the ranks
     public static final List<String> ZFM_DEVELOPERS = Arrays.asList("xxlinkdevil06xx", "iSaplings");
     public static final List<String> FOUNDERS = Arrays.asList("ItzZarama", "Marius_nightfire");
     public static final List<String> SYSADMIN = Arrays.asList("DaBoyTM");
     public static final List<String> HELPERS = Arrays.asList("NullOne");
     public static final List<String> TRYADMINS = Arrays.asList("UnKnownYet", "NoOneYet");
-    public static final List<String> ZFM_LeadDevelopers = Arrays.asList("DaBoyTM", "Alex33856");
+    public static final List<String> ZFM_LEADDEVELOPERS = Arrays.asList("DaBoyTM", "Alex33856");
     private static final Random RANDOM = new Random();
     public static String DATE_STORAGE_FORMAT = "EEE, d MMM yyyy HH:mm:ss Z";
     public static final Map<String, ChatColor> CHAT_COLOR_NAMES = new HashMap<String, ChatColor>();
