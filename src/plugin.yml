@@ -1,6 +1,6 @@
 name: ZaramaFreedomMod
 main: me.StevenLawson.TotalFreedomMod.TotalFreedomMod
-version: 2.5
+version: 2.5.2
 description: This is ZaramaFreedomMod made for the ZaramaFreedomServer.
 softdepend: [BukkitTelnet, WorldEdit, Essentials, Spigot 1.8 LASTEST]
 authors: [Madgeek1420, DarthSalamon, Alex33658, DaBoyTM]
