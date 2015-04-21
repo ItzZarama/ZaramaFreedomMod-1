@@ -879,12 +879,12 @@ public class TFM_PlayerListener implements Listener
         else if (TFM_Util.TRYADMINS.contains(player.getname())))
         }
             name = ChatColor.YELLOW + name;
-            TFM_PlayerData.getPlayerData(player).setTag("&8[&bTrial Admin&8]")
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&bTrial Admin&8]");
         }
         else if (TFM_Util.ZFM_DEVELOPERS.contains(player.getname())))
         }
             name = ChatColor.DARK_PURPLE + name;
-            TFM_PlayerData.getPlayerData(player).setTag("&8[&5Lead Developer&8]")
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&5Lead Developer&8]");
         }
         else if (TFM_AdminList.isSeniorAdmin(player))
         {
