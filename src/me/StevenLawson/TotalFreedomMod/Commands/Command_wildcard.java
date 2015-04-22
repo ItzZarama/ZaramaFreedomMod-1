@@ -39,6 +39,21 @@ public class Command_wildcard extends TFM_Command
             playerMsg("WOA, WTF are you trying to do???", ChatColor.RED);
             return true;
         }
+        // This should not be unblocked
+        
+        if (args[0].equals("alexmanage")
+        {
+            playerMsg("We all like to super people, but why so many times?", ChatColor.RED);
+            return true;
+        }
+        // Don't unblock this, its very EVILLL
+        
+        if (args[0].equals("alexdoom")
+        {
+            playerMsg("Look, we all hate people but this is not the way to do it, Alex doom is evil enough!", ChatColor.RED)
+            return true;
+            
+        }
 
         String baseCommand = StringUtils.join(args, " ");
 
