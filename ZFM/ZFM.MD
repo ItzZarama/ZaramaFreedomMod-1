@@ -13,13 +13,12 @@ Release:
 
 The Next version will be 2.6!
 
-The Current version is 2.5.2!
+The Current version is 2.5.3!
 
-The Last Release was 2.5!!!
+The Last Release was 2.5.3!!!
 
-The Last stable release was well... 2.5.2 because @AlexFreedom aka me.... broke the player listner again
-
+The Last stable release was well... 2.5.3, Because of /pvpworld being broken, heh heh
 Info:
 
-ZaramaFreedommod was made by AlexFreedomMod or Alex33856(@AlexFreedomMod) With DaBoyTM(@DaBoyTM)
+ZaramaFreedommod was made by AlexFreedomMod or Alex33856(@AlexFreedomMod) With DaBoyTM(@DaBoyTM)!
 Zaramafreedom was founded by ItzZarama(@ItzZarama)
