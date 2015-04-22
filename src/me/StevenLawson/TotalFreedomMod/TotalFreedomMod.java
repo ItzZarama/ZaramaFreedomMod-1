@@ -76,8 +76,9 @@ public class TotalFreedomMod extends JavaPlugin
     {
         TFM_Log.info("TFM Made by Darthsalamon and Madgeek");
         TFM_Log.info("Compiled " + buildDate + " by " + buildCreator);
-        TFM_Log.info("You are running Version 2.1 of ZFM.");
+        TFM_Log.info("You are running Version 2.5.2 of ZFM.");
         TFM_Log.info("ZFM Made By Alex33856");
+        TFM_Log.info("Please report all errors to the github page");
 
         final TFM_Util.MethodTimer timer = new TFM_Util.MethodTimer();
         timer.start();
@@ -86,7 +87,7 @@ public class TotalFreedomMod extends JavaPlugin
         {
             TFM_Log.warning(pluginName + " is compiled for " + TFM_ServerInterface.COMPILE_NMS_VERSION + " but the server is running "
                     + "version " + TFM_Util.getNmsVersion() + "!");
-            TFM_Log.warning("This might result in unexpected behaviour!");
+            TFM_Log.warning("This might result in unexpected & BUGGGGYYYyY behaviour!");
         }
 
         TFM_Util.deleteCoreDumps();
