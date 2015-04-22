@@ -1,3 +1,4 @@
+/*
 package me.StevenLawson.TotalFreedomMod.Commands;
 
 import org.bukkit.ChatColor;
@@ -18,3 +19,4 @@ public class Command_manuadd extends TFM_Command
        
        
         
+/*
