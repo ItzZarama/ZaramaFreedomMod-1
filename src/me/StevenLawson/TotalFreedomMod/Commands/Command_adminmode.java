@@ -33,7 +33,7 @@ public class Command_adminmode extends TFM_Command
             {
                 if (!TFM_AdminList.isSuperAdmin(player))
                 {
-                    player.kickPlayer("Server: Server is now closed to Operators.");
+                    player.kickPlayer(sender.getname + ", has closed the server to all ops!);
                 }
             }
             return true;
