@@ -1,12 +1,19 @@
 #
 # Permanent Bans
 #
+# Please follow the format.
+# or else this will not work
+# exampleplayer:
+#   - 123.123.123.123
+#   - 321.321.321.321
+
+
 
 badplayer1:
   - 123.123.123.123
   - 321.321.321.321
-IShallKillYa:
+Griefer:
   - 111.111.111.111
   - 225.999.752.259
-DaKillerAB: 
+Troll: 
   - 209.140.206.190
