@@ -1,10 +1,10 @@
 name: ZaramaFreedomMod
 main: me.StevenLawson.TotalFreedomMod.TotalFreedomMod
-version: 2.5.2
+version: 2.5.3
 description: This is ZaramaFreedomMod made for the ZaramaFreedomServer.
 softdepend: [BukkitTelnet, WorldEdit, Essentials, Spigot 1.8 LASTEST]
 authors: [Madgeek1420, DarthSalamon, Alex33658, DaBoyTM]
 
-# plugin.yml is no longer used to define commands.
-# please use the lastest versions of the softdepends!!!!!
-# Or Else ZaramaFreedomMod will not work well!!!
+# Please use the lastest version of all the softdepends
+# Or your server will not work well with ZaramaFreedomMod
+# this may cause very BAD THINGS 
