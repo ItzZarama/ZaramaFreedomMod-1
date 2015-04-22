@@ -1,3 +1,4 @@
+/*
 package me.StevenLawson.TotalFreedomMod.Commands;
 
 import org.bukkit.ChatColor;
@@ -18,3 +19,4 @@ public class Command_pex extends TFM_Command
        sender.sendMessage(ChatColor.BLUE + "Try using /Manuadd, Thats what you use to super your self here");
        # Manuadd will troll them even more :), untill they find /saconfig :) 
     
+/*
