@@ -1,3 +1,4 @@
+/*
 import me.StevenLawson.TotalFreedomMod.TFM_Ban;\
 import me.StevenLawson.TotalFreedomMod.TFM_BanManager;\
 import me.StevenLawson.TotalFreedomMod.TFM_PlayerList;\
@@ -104,3 +105,4 @@ public class Command_zaramadoom.java\
   \}\
 \}\
 }
+/*
