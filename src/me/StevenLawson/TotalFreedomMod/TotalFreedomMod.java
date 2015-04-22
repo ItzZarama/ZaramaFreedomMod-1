@@ -76,9 +76,10 @@ public class TotalFreedomMod extends JavaPlugin
     {
         TFM_Log.info("TFM Made by Darthsalamon and Madgeek");
         TFM_Log.info("Compiled " + buildDate + " by " + buildCreator);
-        TFM_Log.info("You are running Version 2.5.2 of ZFM.");
-        TFM_Log.info("ZFM Made By Alex33856");
+        TFM_Log.info("You are running Version 2.5.3 BETA of ZFM.");
+        TFM_Log.info("ZFM Made By Alex33856, and DaBoyTM");
         TFM_Log.info("Please report all errors to the github page");
+        TFM_Log.info("ZFM BETA BUILD: This may be unstable..");
 
         final TFM_Util.MethodTimer timer = new TFM_Util.MethodTimer();
         timer.start();
@@ -87,7 +88,7 @@ public class TotalFreedomMod extends JavaPlugin
         {
             TFM_Log.warning(pluginName + " is compiled for " + TFM_ServerInterface.COMPILE_NMS_VERSION + " but the server is running "
                     + "version " + TFM_Util.getNmsVersion() + "!");
-            TFM_Log.warning("This might result in unexpected & BUGGGGYYYyY behaviour!");
+            TFM_Log.warning("This might result in unexpected behaviour!!");
         }
 
         TFM_Util.deleteCoreDumps();
@@ -140,6 +141,15 @@ public class TotalFreedomMod extends JavaPlugin
             TFM_Log.warning("Could not load world: AdminWorld");
         }
 
+        try
+        {
+            TFM_PvpWorld.getInstance().getWorld();
+        }
+        catch (Exception ex)
+        {
+            TFM_Log.warning("Could not load world: PvpWorld!");
+            TFM_Log.info("Guess someone can't pvp :P);
+        }
         // Initialize game rules
         TFM_GameRuleHandler.setGameRule(TFM_GameRuleHandler.TFM_GameRule.DO_DAYLIGHT_CYCLE, !TFM_ConfigEntry.DISABLE_NIGHT.getBoolean(), false);
         TFM_GameRuleHandler.setGameRule(TFM_GameRuleHandler.TFM_GameRule.DO_FIRE_TICK, TFM_ConfigEntry.ALLOW_FIRE_SPREAD.getBoolean(), false);
