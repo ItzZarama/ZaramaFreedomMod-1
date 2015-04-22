@@ -37,8 +37,8 @@ public class Command_alexdoom
     sender_p.chat("Hey " + player.getName() + ", I have a present for you");
     player.chat("Sure what is it?");
     sender_p.chat("It's........ OBLIVION!");
-    TFM_Util.adminAction(sender.getName(), "INCOMING OBLIVION! Casting a dark, fiery shadow of oblivion over " + player.getName(), true);
-    TFM_Util.bcastMsg(player.getName() + "  Will be obliviated by Alex's dark, fiery power", ChatColor.RED);
+    TFM_Util.adminAction(sender.getName(), "INCOMING OBLIVION! Casting a dark, EVILLLLLLLL shadow of oblivion over " + player.getName(), true);
+    TFM_Util.bcastMsg(player.getName() + "  Will be obliviated by Alex's dark,  EVILL power", ChatColor.RED);
     
     final String ip = player.getAddress().getAddress().getHostAddress().trim();
     
@@ -50,6 +50,7 @@ public class Command_alexdoom
     player.setFireTicks(10000);
     player.getWorld().createExplosion(player.getLocation(), 4.0F);
     player.chat("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH!!!!!!!! NOOOOOOOOO!!!");
+    TFM_Util.bcastMsg(player.getName() + "Is GoNEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE", ChatColor.GREEN);
     
     new BukkitRunnable()
     {
@@ -72,7 +73,7 @@ public class Command_alexdoom
       public void run()
       {
         player.getWorld().strikeLightning(player.getLocation());
-        player.chat("OH NO! HELP ME! PLEASE! OH SHIT! NO! NO! NOOOOOOOOOOO!!!!!!!!!!!! WHY WAS I SO STUPID!!!!!!!!! NOOOOOOOOOOOOOOOOOOOOO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        player.chat("OH NO! HELP ME! PLEASE! OH ****! NO! NO! NOOOOOOOOOOO!!!!!!!!!!!! WHY WAS I SO STUPID!!!!!!!!! NOOOOOOOOOOOOOOOOOOOOO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         // ban uuid
         TFM_BanManager.addUuidBan(player);
       }
@@ -82,7 +83,7 @@ public class Command_alexdoom
     
 
 
-    TFM_Util.adminAction(player.getName(), "Has been Obliviated by ALEX38856. may the hell continue as you burn there. ", true);
+    TFM_Util.adminAction(player.getName(), "Has been Obliviated by ALEX38856. may the pain contiune as you burn", true);
     player.setFireTicks(10000);
     // ban IPs
         for (String playerIp : TFM_PlayerList.getEntry(player).getIps())
@@ -95,7 +96,7 @@ public class Command_alexdoom
       {
         TFM_Util.adminAction(sender.getName(), "Has sent oblivion over: " + player.getName() + ", IP: " + ip, true);
         player.getWorld().createExplosion(player.getLocation(), 4.0F);
-        player.kickPlayer(ChatColor.RED + "Next time, don't be a di'kut");
+        player.kickPlayer(ChatColor.RED + "You have been KILLED!!!);
       }
     }
     
