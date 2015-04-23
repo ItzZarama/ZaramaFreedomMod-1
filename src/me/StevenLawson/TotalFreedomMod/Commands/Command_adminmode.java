@@ -33,7 +33,7 @@ public class Command_adminmode extends TFM_Command
             {
                 if (!TFM_AdminList.isSuperAdmin(player))
                 {
-                    player.kickPlayer(sender.getname + ", has closed the server to non-superadmins. Please come back soon.);
+                    player.kickPlayer(sender.getName(), "has closed the server to non-superadmins. Please come back soon.");
                 }
             }
             return true;
