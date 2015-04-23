@@ -923,8 +923,22 @@ public class TFM_PlayerListener implements Listener
             TFM_Util.bcastMsg(ChatColor.GREEN + "Welcome back DaBoyTM!");
             TFM_Util.bcastMsg(ChatColor.PURPLE + "I am the Lead Developer and Co-Creator of ZFM!");
         }
-    
-
+        else if (sender.getName().equals("ItzZarama"))
+        }
+           player.getInventory().clear();
+           TFM_Log.info("[JOIN] Founder ItzZarama has joined");
+           player.setOp(true);
+           player.setGameMode(GameMode.CREATIVE);
+           name = ChatColor.RED + name;
+           TFM_PlayerData.getplayerData(player).setTag("&8[&4Founder&8]");
+           // This was done twice because well for people to notice!
+           TFM_Util.bcastMsg(ChatColor.RED + "Founder ItzZarama" + ChatColor.BLUE + " joined the game!");
+           TFM_Log.info("[Alert] Sytem has repeated twice, Because it is ment to do that :P");
+        }
+        else if (sender.getName().equals("_foolycooly_")
+          player.kickPlayer(ChatColor.DARK_RED + player.getName + "You are not allowed here. No Approval!");
+          TFM_Log.info("[ALERT]: _foolycooly_ tryed to join the server. But was automaticly kicked due to "PermBan Anti-Aproval");
+        }
     }
 
         try
