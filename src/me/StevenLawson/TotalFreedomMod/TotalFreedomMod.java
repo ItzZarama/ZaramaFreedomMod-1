@@ -148,7 +148,7 @@ public class TotalFreedomMod extends JavaPlugin
         catch (Exception ex)
         {
             TFM_Log.warning("Could not load world: PvpWorld!");
-            TFM_Log.info("Guess someone can't pvp :P);
+            TFM_Log.info("Guess someone can't pvp :P");
         }
         // Initialize game rules
         TFM_GameRuleHandler.setGameRule(TFM_GameRuleHandler.TFM_GameRule.DO_DAYLIGHT_CYCLE, !TFM_ConfigEntry.DISABLE_NIGHT.getBoolean(), false);
@@ -217,7 +217,13 @@ public class TotalFreedomMod extends JavaPlugin
 
         server.getScheduler().cancelTasks(plugin);
 
-        TFM_Log.info("Plugin disabled");
+        TFM_Log.info("ZaramaFreedomMod Disabled");
+    }
+    
+    public void onEnable()
+    {
+        TFM_Log.info("Everything Loaded");
+        TFM_Log.info("ZaramaFreedomMod Enabled with no problem");
     }
 
     @Override
