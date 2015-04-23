@@ -222,7 +222,7 @@ public class TotalFreedomMod extends JavaPlugin
     
     public void onEnable()
     {
-        TFM_Log.info("Everything Loaded")
+        TFM_Log.info("Everything Loaded");
         TFM_Log.info("ZaramaFreedomMod Enabled with no problem");
     }
 
