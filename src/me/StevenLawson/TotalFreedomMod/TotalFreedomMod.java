@@ -47,7 +47,7 @@ public class TotalFreedomMod extends JavaPlugin
     //
     public static String buildNumber = "1";
     public static String buildDate = TotalFreedomMod.buildDate = TFM_Util.dateToString(new Date());
-    public static String buildCreator = "Unknown";
+    public static String buildCreator = "Alex33856";
     //
     public static Server server;
     public static TotalFreedomMod plugin;
@@ -78,9 +78,8 @@ public class TotalFreedomMod extends JavaPlugin
         TFM_Log.info("Compiled " + buildDate + " by " + buildCreator);
         TFM_Log.info("You are running Version 2.6 of ZFM.");
         TFM_Log.info("ZFM Made By Alex33856, and DaBoyTM");
-        TFM_Log.info("Please report all errors to the github page");
-        TFM_Log.info("ZFM Stable Build");
-
+        TFM_Log.info("Please report all errors to the github page at https://github.com/AlexFreedomMod/ZaramaFreedomMod");
+        TFM_Log.info("This is a ZFM Stable Build");
         final TFM_Util.MethodTimer timer = new TFM_Util.MethodTimer();
         timer.start();
 
@@ -222,8 +221,8 @@ public class TotalFreedomMod extends JavaPlugin
     
     public void onEnable()
     {
-        TFM_Log.info("Everything Loaded");
-        TFM_Log.info("ZaramaFreedomMod Enabled with no problem");
+        TFM_Log.info("[ZFM] Everything was loading with no errors");
+        TFM_Log.info("[ZFM] Your lucky today");
     }
 
     @Override
