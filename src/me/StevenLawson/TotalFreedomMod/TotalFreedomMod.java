@@ -217,7 +217,12 @@ public class TotalFreedomMod extends JavaPlugin
 
         server.getScheduler().cancelTasks(plugin);
 
-        TFM_Log.info("Plugin disabled");
+        TFM_Log.info("ZaramaFreedomMod Disabled");
+    }
+    
+    public void onEnable()
+    {
+        TFM_Log.info("ZaramaFreedomMod Enabled with no problem");
     }
 
     @Override
