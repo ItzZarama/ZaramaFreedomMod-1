@@ -1,10 +1,9 @@
 name: ZaramaFreedomMod
 main: me.StevenLawson.TotalFreedomMod.TotalFreedomMod
 version: 2.6
-description: This is ZaramaFreedomMod made for the ZaramaFreedomServer.
-softdepend: [BukkitTelnet, WorldEdit, Essentials, Spigot 1.8 LASTEST]
+description:  This plugin named ZaramaFreedomMod is based off TotalFreedommod and is made for the ZaramaFreedom Server!
+softdepend: [BukkitTelnet, WorldEdit, Essentials, Spigot]
 authors: [Madgeek1420, DarthSalamon, Alex33658, DaBoyTM]
 
-# Please use the lastest version of all the softdepends
-# Or your server will not work well with ZaramaFreedomMod
-# this may cause very BAD THINGS 
+# You must use Spigot 1.8 / Higher or else it will not work
+# When running a server use Spigot 1.8.R01 OR HIGHER
