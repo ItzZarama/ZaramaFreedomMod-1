@@ -22,3 +22,6 @@ public class Command_ai extends TFM_Command
         sender.sendMessage(ChatColor.BLUE + "Step 5:" + ChatColor.GREEN + " Your app will be accepted or denied ");
         sender.sendMessage(ChatColor.BLUE + "Tip #1" + ChatColor.GREEN + " If it is denied, Please join an admin crew ");
         sender.sendMessage(ChatColor.BLUE + "Tip #2:" + ChatColor.GREEN + "If it is accepted, You will be supered in " + ChatColor.GOLD + "10 Days");
+    } 
+    
+    return true;
