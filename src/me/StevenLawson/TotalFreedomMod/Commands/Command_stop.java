@@ -17,7 +17,7 @@ public class Command_stop extends TFM_Command
 
         for (Player player : server.getOnlinePlayers())
         {
-            player.kickPlayer("Server is going offline, come back in about 20 seconds.");
+            player.kickPlayer("Server is going offline, come soon.");
         }
 
         server.shutdown();
