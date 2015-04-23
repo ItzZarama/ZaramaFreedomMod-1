@@ -76,10 +76,10 @@ public class TotalFreedomMod extends JavaPlugin
     {
         TFM_Log.info("TFM Made by Darthsalamon and Madgeek");
         TFM_Log.info("Compiled " + buildDate + " by " + buildCreator);
-        TFM_Log.info("You are running Version 2.5.3 BETA of ZFM.");
+        TFM_Log.info("You are running Version 2.6 of ZFM.");
         TFM_Log.info("ZFM Made By Alex33856, and DaBoyTM");
         TFM_Log.info("Please report all errors to the github page");
-        TFM_Log.info("ZFM BETA BUILD: This may be unstable..");
+        TFM_Log.info("ZFM Stable Build");
 
         final TFM_Util.MethodTimer timer = new TFM_Util.MethodTimer();
         timer.start();
