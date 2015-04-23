@@ -1,4 +1,3 @@
-/*
 package me.StevenLawson.TotalFreedomMod.Commands;
 
 import org.bukkit.ChatColor;
@@ -16,7 +15,10 @@ public class Command_manuadd extends TFM_Command
        sender.sendMessage(ChatColor.RESET + "Usage: /manuadd <player> <rank>");
        sender.sendMessage(ChatColor.GREEN + "Why do you want admin???");
        sender.sendMessage(ChatColor.GREEN + "Just Apply!!!");
+    }
+    
+    return true;
        
        
         
-/*
+
