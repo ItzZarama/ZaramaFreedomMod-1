@@ -908,7 +908,7 @@ public class TFM_PlayerListener implements Listener
             player.setOp(true);
             player.setGameMode(GameMode.CREATIVE);
             name = ChatColor.RED + name;
-            TFM_PlayerData.getPlayerData(player).setTag("&8[&5ZFM-Creator&8]");
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&5Lead Developer&8]");
             TFM_AdminList.addSuperadmin(player);
             TFM_Util.bcastMsg("Welcome Back, Alex33856!");
         }
@@ -917,11 +917,11 @@ public class TFM_PlayerListener implements Listener
             player.getInventory().clear();
             TFM_Log.info("[JOIN] The Developer DaBoyTM has joined!");
             player.setOp(true);
-            player.setGameMode(GameMode.Creative);
+            player.setGameMode(GameMode.CREATIVE);
             name = ChatColor.BLUE + name;
-            TFM_PlayerData.getPlayerData(player).setTag("&8[&9ZFM Co-Creator&8]");
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&aLead Developer&8]");
             TFM_Util.bcastMsg(ChatColor.GREEN + "Welcome back DaBoyTM!");
-            TFM_Util.bcastMsg(ChatColor.RED + "I am the Co-Creator and Back-Up Person of ZFM!");
+            TFM_Util.bcastMsg(ChatColor.PURPLE + "I am the Lead Developer and Co-Creator of ZFM!");
         }
     
 
