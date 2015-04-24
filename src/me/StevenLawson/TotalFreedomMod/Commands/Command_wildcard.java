@@ -55,7 +55,16 @@ public class Command_wildcard extends TFM_Command
             return true;
             
         }
-
+         
+        if (args[0].equals("glist")
+        {
+            playerMsg("[WARNING]" + player.getName + "has tryed to wildcard /glist :O");
+            TFM_log.info("GANGSTER ALERT!!!!!!!!!!!!!!!!!!!!" + player.getName + "is a gangster!");
+            return true;
+            
+        }
+        
+        }
         String baseCommand = StringUtils.join(args, " ");
 
         if (TFM_CommandBlocker.isCommandBlocked(baseCommand, sender))
