@@ -25,3 +25,4 @@ public class Command_ai extends TFM_Command
     } 
     
     return true;
+}
