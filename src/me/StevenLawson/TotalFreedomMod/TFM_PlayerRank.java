@@ -27,8 +27,8 @@ public enum TFM_PlayerRank
     FOUNDERS("The " + ChatColor.DARK_RED + "Founder Of Zarama Freedom", ChatColor.DARK_RED + "[Founder]"),
     SYSADMIN("A " + ChatColor.GREEN + "System Admin", ChatColor.GREEN + "[SysAdmin]"),
     HELPERS("A " + ChatColor.RED + "Helper", ChatColor.RED + "[Helper]"),
-    TRYADMINS("A" + ChatColor.GOLD + "Trial Super Admin", ChatColor.YELLOW + "[TRIALADMIN]"),
-    ZFM_LEADDEVELOPERS("The" + ChatColor.DARK_PURPLE + "Lead Develope!", ChatColor.DARK_PURPLE + "[Lead Developer]");
+    TRYADMINS("A" + ChatColor.GOLD + "Trial Super Admin", ChatColor.YELLOW + "[Trial]"),
+    ZFM_LEADDEVELOPERS("the" + ChatColor.DARK_PURPLE + "Lead Developer!", ChatColor.DARK_PURPLE + "[Lead Developer]");
     private final String loginMessage;
     private final String prefix;
 
