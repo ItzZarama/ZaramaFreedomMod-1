@@ -21,36 +21,37 @@ public class Command_wildcard extends TFM_Command
 
         if (args[0].equals("wildcard"))
         {
-            playerMsg("What the hell are you trying to do, you stupid idiot...", ChatColor.RED);
+            playerMsg("No Thanks", ChatColor.RED);
             return true;
         }
         if (args[0].equals("gtfo"))
         {
-            playerMsg("Nice try", ChatColor.RED);
+            playerMsg("Woah Mate, that is just evil for ops to ban someone!", ChatColor.RED);
             return true;
         }
         if (args[0].equals("doom"))
         {
-            playerMsg("Look, we all hate people, but this is not the way to deal with it, doom is evil enough!", ChatColor.RED);
+            playerMsg("Doom is not for you, doom doesn't fix anyone!", ChatColor.RED);
             return true;
         }
         if (args[0].equals("saconfig"))
         {
-            playerMsg("WOA, WTF are you trying to do???", ChatColor.RED);
+            playerMsg("COMPLETE FAIL! Please, just no.", ChatColor.RED);
+            player.setOp(false);
             return true;
         }
         // This should not be unblocked
         
         if (args[0].equals("alexmanage")
         {
-            playerMsg("We all like to super people, but why so many times?", ChatColor.RED);
+            playerMsg("Can I help you?", ChatColor.RED);
             return true;
         }
         // Don't unblock this, its very EVILLL
         
         if (args[0].equals("alexdoom")
         {
-            playerMsg("Look, we all hate people but this is not the way to do it, Alex doom is evil enough!", ChatColor.RED)
+            playerMsg("This Doom cannot fix anyone!", ChatColor.RED)
             return true;
             
         }
