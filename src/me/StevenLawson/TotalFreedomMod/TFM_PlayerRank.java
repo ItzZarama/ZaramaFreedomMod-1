@@ -6,7 +6,6 @@ import static me.StevenLawson.TotalFreedom.TFM_Util.ZFM_DEVELOPERS;
 import static me.StevenLawson.TotalFreedom.TFM_Util.FOUNDERS;
 import static me.StevenLawson.TotalFreedom.TFM_Util.SYSADMIN;
 import static me.StevenLawson.TotalFreedom.TFM_Util.HELPERS;
-import static me.StevenLawson.TotalFreedomMod.TFM_Util.TRYADMINS;
 import static me.StevenLawson.TotalFreedomMod.TFM_Util.ZFM_LEADDEVELOPERS
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
@@ -27,7 +26,6 @@ public enum TFM_PlayerRank
     FOUNDERS("The " + ChatColor.DARK_RED + "Founder Of Zarama Freedom", ChatColor.DARK_RED + "[Founder]"),
     SYSADMIN("A " + ChatColor.GREEN + "System Admin", ChatColor.GREEN + "[SysAdmin]"),
     HELPERS("A " + ChatColor.RED + "Helper", ChatColor.RED + "[Helper]"),
-    TRYADMINS("A" + ChatColor.GOLD + "Trial Super Admin", ChatColor.YELLOW + "[Trial]"),
     ZFM_LEADDEVELOPERS("the" + ChatColor.DARK_PURPLE + "Lead Developer!", ChatColor.DARK_PURPLE + "[Lead Developer]");
     private final String loginMessage;
     private final String prefix;
@@ -101,12 +99,7 @@ public enum TFM_PlayerRank
         {
             return HELPERS;
         }
-
-        if (TRYADMINS.contains(sender.getName()))
-        {
-            return TRYADMINS;
-        }
-        
+         
         if (ZFM_LEADDEVELOPERS.contains(sender.getName()))
         {
             return ZFM_LEADDEVELOPERS;
