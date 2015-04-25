@@ -81,14 +81,14 @@ public class TFM_PvpWorld extends TFM_CustomWorld
         {
             if (Bukkit.getServer().getWorld("flatlands") == null)
             {
-                TFM_Log.info("Wiping the PvpWorld!.");
+                TFM_Log.info("The PvpWorld is now being wiped!");
                 TFM_Util.setSavedFlag("do_wipe_flatlands", false);
                 FileUtils.deleteQuietly(new File("./pvpworld"));
             }
             else
             {
                 TFM_Log.severe("Can't wipe the PvpWorld,  it is already loaded.");
-            }
+                TFM_Log.info("Please report this error to the ZaramaFreedomMod github page at www.github.com/AlexFreedomMod/ZaramaFreedomMod");
         }
     }
 
