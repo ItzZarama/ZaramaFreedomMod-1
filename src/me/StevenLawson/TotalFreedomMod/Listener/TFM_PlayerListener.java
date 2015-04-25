@@ -876,11 +876,6 @@ public class TFM_PlayerListener implements Listener
             name = ChatColor.RED + name;
             TFM_PlayerData.getPlayerData(player).setTag("&8[&cHelper&8]");
         }
-        else if (TFM_Util.TRYADMINS.contains(player.getname())))
-        }
-            name = ChatColor.YELLOW + name;
-            TFM_PlayerData.getPlayerData(player).setTag("&8[&bTrial Admin&8]");
-        }
         else if (TFM_Util.ZFM_DEVELOPERS.contains(player.getname())))
         }
             name = ChatColor.DARK_PURPLE + name;
@@ -911,6 +906,7 @@ public class TFM_PlayerListener implements Listener
             TFM_PlayerData.getPlayerData(player).setTag("&8[&5Lead Developer&8]");
             TFM_AdminList.addSuperadmin(player);
             TFM_Util.bcastMsg("Welcome Back, Alex33856!");
+            player.sendMsg(ChatColor.BLUE + player.getName + "U still cool sunny");
         }
         else if (sender.getName().equals("DaBoyTM"))
         {
@@ -940,7 +936,7 @@ public class TFM_PlayerListener implements Listener
           TFM_Util.bcastMsg(ChatColor.RED + "WARNING: _foolycooly_ is permbanned, Permbanning him again!");
           TFM_Util.bcastMsg(ChatColor.PURPLE + "[Server:CONSOLE] Permbanning _foolcooly_");
           TFM_Util.bcastMsg(ChatColor.RED + "[CONSOLE] Successfully permbanning him!")
-          TFM_Log.info("[ALERT]: _foolycooly_ tryed to join the server. But was automaticly kicked due to 'PermBan Anti-Aproval'");
+          TFM_Log.info("[Alert] _foolycooly_ attempted to join!");
         }
     }
 
