@@ -219,10 +219,11 @@ public class TotalFreedomMod extends JavaPlugin
         TFM_Log.info("ZaramaFreedomMod Disabled");
     }
     
+    @Override
     public void onEnable()
     {
-        TFM_Log.info("[ZFM] Everything was loading with no errors");
-        TFM_Log.info("[ZFM] Your lucky today");
+        TFM_Log.info("ZFM Loaded");
+        TFM_Log.info("[ZaramaFreedomBot] Everthing Loaded");
     }
 
     @Override
