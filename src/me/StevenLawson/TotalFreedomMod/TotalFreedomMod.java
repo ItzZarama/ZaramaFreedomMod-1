@@ -74,12 +74,14 @@ public class TotalFreedomMod extends JavaPlugin
     @Override
     public void onEnable()
     {
+        // Made it so there are diffent logs for them
+        // Sadly it takes up more Log space
+        TFM_Log.info("TFM LOG");
         TFM_Log.info("TFM Made by Darthsalamon and Madgeek");
+        TFM_Log.info("ZFM LOG");
+        TFM_Log.info("ZFM Version: 2.7");
         TFM_Log.info("Compiled " + buildDate + " by " + buildCreator);
-        TFM_Log.info("You are running Version 2.6 of ZFM.");
-        TFM_Log.info("ZFM Made By Alex33856, and DaBoyTM");
-        TFM_Log.info("Please report all errors to the github page at https://github.com/AlexFreedomMod/ZaramaFreedomMod");
-        TFM_Log.info("This is a ZFM Stable Build");
+        TFM_Log.info("Report all errors to https://github.com/AlexFreedomMod/ZaramaFreedomMod/issues")
         final TFM_Util.MethodTimer timer = new TFM_Util.MethodTimer();
         timer.start();
 
@@ -87,7 +89,7 @@ public class TotalFreedomMod extends JavaPlugin
         {
             TFM_Log.warning(pluginName + " is compiled for " + TFM_ServerInterface.COMPILE_NMS_VERSION + " but the server is running "
                     + "version " + TFM_Util.getNmsVersion() + "!");
-            TFM_Log.warning("This might result in unexpected behaviour!!");
+            TFM_Log.warning("This might result in unexpected behaviour!!!");
         }
 
         TFM_Util.deleteCoreDumps();
@@ -121,7 +123,8 @@ public class TotalFreedomMod extends JavaPlugin
         pm.registerEvents(new TFM_WeatherListener(), plugin);
         pm.registerEvents(new TFM_ServerListener(), plugin);
         pm.registerEvents(new TFM_TelnetListener(), plugin);
-
+         
+        // If The worlds don't load
         try
         {
             TFM_Flatlands.getInstance().getWorld();
@@ -146,8 +149,7 @@ public class TotalFreedomMod extends JavaPlugin
         }
         catch (Exception ex)
         {
-            TFM_Log.warning("Could not load world: PvpWorld!");
-            TFM_Log.info("Guess someone can't pvp :P");
+            TFM_Log.warning("The Player Vs Player World could not be loaded!");
         }
         // Initialize game rules
         TFM_GameRuleHandler.setGameRule(TFM_GameRuleHandler.TFM_GameRule.DO_DAYLIGHT_CYCLE, !TFM_ConfigEntry.DISABLE_NIGHT.getBoolean(), false);
@@ -216,14 +218,16 @@ public class TotalFreedomMod extends JavaPlugin
 
         server.getScheduler().cancelTasks(plugin);
 
-        TFM_Log.info("ZaramaFreedomMod Disabled");
+        TFM_Log.info("TotalFreedomMod & ZaramaFreedommod have been disabled");
+        TFM_Log.info("Thanks for using both!");
     }
     
     @Override
     public void onEnable()
     {
-        TFM_Log.info("ZFM Loaded");
+        TFM_Log.info("TFM & ZFM Loaded.");
         TFM_Log.info("[ZaramaFreedomBot] Everthing Loaded");
+        TFM_Log.info("[TIP] Did you know you can use /qop to help you if your not admin!");
     }
 
     @Override
