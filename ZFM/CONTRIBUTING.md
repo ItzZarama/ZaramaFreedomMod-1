@@ -15,8 +15,8 @@ Did you ever want a milestone,
 Well, think of the following
 
 1 Does it fit our Freedom goal?.
-2 Is your issue a bug that only is a bug in (EX. 1.8.1) and it doesnt in any higher version, Please do not make it.
-3. Is it about a spelling misktake, If you make a pull request you could of just pointed it out to us :P :Thumbs_Down:.
-4. Does it edit anything that is not Suppost to be edited, if so do not say its an issue here, Report it to. TotalFreedom(http://github.com/TotalFreedom/TotalFreedomMod).
-5. If it is just something very weird or minor do not post it.
+2 Is your issue a bug that only is a bug in (EX. 1.8.1) and it doesnt in any higher version, Please do not make it
+3. Is it about a spelling misktake, If you make a pull request you could of just pointed it out to us :P :Thumbs_Down:
+4. Does it edit anything that is not Suppost to be edited, if so do not say its an issue here, Report it to TotalFreedom(http://github.com/TotalFreedom/TotalFreedomMod)
+5. If it is just something very weird or minor do not post it
 6. Be sure it is not a clone 
