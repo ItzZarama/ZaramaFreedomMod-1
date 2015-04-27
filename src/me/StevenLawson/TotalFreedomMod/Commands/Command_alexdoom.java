@@ -15,8 +15,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 @CommandPermissions(level=AdminLevel.SENIOR, source=SourceType.BOTH)
 @CommandParameters(description="For the bad Superadmins", usage="/<command> <playername>")
-public class Command_alexdoom
-  extends TFM_Command
+public class Command_alexdoom extends TFM_Command
 {
   public boolean run(final CommandSender sender, Player sender_p, Command cmd, String commandLabel, String[] args, boolean senderIsConsole)
   {
