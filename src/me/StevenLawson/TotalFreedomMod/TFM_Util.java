@@ -72,7 +72,6 @@ public class TFM_Util
     public static final List<String> ZFM_DEVELOPERS = Arrays.asList("xxlinkdevil06xx", "iSaplings");
     public static final List<String> FOUNDERS = Arrays.asList("ItzZarama", "Marius_nightfire");
     public static final List<String> SYSADMIN = Arrays.asList("DaBoyTM");
-    public static final List<String> HELPERS = Arrays.asList("NullOne");
     public static final List<String> ZFM_LEADDEVELOPERS = Arrays.asList("DaBoyTM", "Alex33856");
     private static final Random RANDOM = new Random();
     public static String DATE_STORAGE_FORMAT = "EEE, d MMM yyyy HH:mm:ss Z";
