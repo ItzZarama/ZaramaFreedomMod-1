@@ -1,6 +1,6 @@
 #
-# ZaramaFreedomMod v2.5.3 Configuration
-# by Madgeek1450, Prozza, DaBoyTM
+# ZaramaFreedomMod v2.6 Configuration
+# by Madgeek1450, Prozza, DaBoyTM and Alex3368
 #
 
 # Generic server information
@@ -84,15 +84,15 @@ allow:
 #
 blocked_commands:
   # Disabled commands
-  - 'n:b:/time:Server-side time changing is disabled. Please use /ptime to set your own personal time.'
-  - 'n:b:/gamemode:Use /creative and /survival to set your gamemode.'
-  - 'n:b:/gamerule:Why do you want to edit this?'
+  - 'n:b:/time:&cERROR: Server-side time changing is disabled. &7Usage: /ptime.'
+  - 'n:b:/gamemode:Usage: /creative and /survival to set your gamemode.'
+  - 'n:b:/gamerule:_'
   - 'n:b:/ban:_'
   - 'n:b:/pardon:_'
   - 'n:b:/ban-ip:_'
   - 'n:b:/pardon-ip:_'
   - 'n:b:/toggledownfall:_'
-  - 'n:b:/effect:Please use /potion to set effects.'
+  - 'n:b:/effect:Usage: /potion to set effects.'
   - 'n:b:/enderchest:_'
   - 'n:b:/spreadplayers:_'
 
@@ -222,7 +222,7 @@ announcer:
     - 'Famous players, such as Notch, are always fake!  We are an offline/cracked server!'
     - 'You may contact ZaramaFreedomMods Support on Twitter!  https://twitter.com/ZaramaPlaysMC'
     - 'You may download TotalFreedomMod here: pravi.us/V8c'
-    - 'ItzZarama is ZaramaFreedoms owner.'
+    - 'SupItsZarama is ZaramaFreedoms owner.'
     - 'Server lagging?  Check the lag via "/tps"'
     - 'You are allowed to record and stream videos on ZaramaFreedom :D'
     - 'An admin abusing?  Report it! pravi.us/vfa'
