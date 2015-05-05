@@ -15,13 +15,10 @@ public class Command_ai extends TFM_Command
     {
     // Sends the player a message
         sender.sendMessage(ChatColor.GREEN + "Admin Application Info");
-        sender.sendMessage(ChatColor.BLUE + "Step 1:" + ChatColor.GREEN + " Make an account on forums");
+        sender.sendMessage(ChatColor.BLUE + "Step 1:" + ChatColor.GREEN + " Make an account on forums at http://zaramafreedom.proboards.com/");
         sender.sendMessage(ChatColor.BLUE + "Step 2:" + ChatColor.GREEN + " Wait 30 Days ");
         sender.sendMessage(ChatColor.BLUE + "Step 3:" + ChatColor.GREEN + " Create An Application! ");
-        sender.sendMessage(ChatColor.BLUE + "Step 4:" + ChatColor.GREEN + " Wait for about 3 days ");
-        sender.sendMessage(ChatColor.BLUE + "Step 5:" + ChatColor.GREEN + " Your app will be accepted or denied ");
-        sender.sendMessage(ChatColor.BLUE + "Tip #1" + ChatColor.GREEN + " If it is denied, Please join an admin crew ");
-        sender.sendMessage(ChatColor.BLUE + "Tip #2:" + ChatColor.GREEN + "If it is accepted, You will be supered in " + ChatColor.GOLD + "10 Days");
+        sender.sendMessage(ChatColor.BLUE + "Step 4:" + ChatColor.GREEN + " And just wait!");
     } 
     
     return true;
