@@ -6,8 +6,3 @@ This plugin was originally coded by StevenLawson (Madgeek1450), with Jerom van d
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) if you are interested in developing TotalFreedomMod. For information on how TotalFreedomMod is licensed, please see [LICENSE.md](LICENSE.md).
 
-# ZaramaFreedoMod #
-
-Zaramafreedommod is a CraftBukkit server plugin designed for The Offical ZaramaFreedomserver, "ZaramaFreedomMod" has  90 Custom command commands. And is also based off totalfreedommod!
-
-ZaramaFreedomMod was coded by AlexFreedomMod (Alex33856), with DaBoyTM (DaBoyTM)!
