@@ -606,6 +606,7 @@ public class TFM_PlayerListener implements Listener
             if (player.isOp()) {
                 // Does nothing because that person is opped
                 
+                
             }
             else
             {
@@ -784,7 +785,7 @@ public class TFM_PlayerListener implements Listener
         }
 
         TFM_PlayerList.removeEntry(player);
-        TFM_Log.info("[EXIT ALERT]: " + player.getName() + " left ZaramaFreedom.", true);
+        TFM_Log.info("[EXIT]: " + player.getName() + " left ZaramaFreedom.", true);
     }
 
     @EventHandler(priority = EventPriority.MONITOR)
@@ -795,7 +796,7 @@ public class TFM_PlayerListener implements Listener
         final String ip = TFM_Util.getIp(player);
         final TFM_Player playerEntry;
 
-        TFM_Log.info("[JOIN ALERT]: " + TFM_Util.formatPlayer(player) + " joined ZaramaFreedom with IP address: " + ip, true);
+        TFM_Log.info("[JOIN]: " + TFM_Util.formatPlayer(player) + " joined ZaramaFreedom with IP address: " + ip, true);
 
         // Handle PlayerList entry (persistent)
         if (TFM_PlayerList.existsEntry(player))
@@ -926,7 +927,7 @@ public class TFM_PlayerListener implements Listener
             name = ChatColor.BLUE + name;
             TFM_PlayerData.getPlayerData(player).setTag("&8[&aLead Developer&8]");
             TFM_Util.bcastMsg(ChatColor.GREEN + "Welcome back DaBoyTM!");
-            TFM_Util.bcastMsg(ChatColor.PURPLE + "I am the Lead Developer and Co-Creator of ZFM!");
+            player.chat("I am the Lead Developer and Co-Creator of ZFM!");
         }
         else if (player.getName().equals("ItzZarama"))
         {
@@ -936,16 +937,14 @@ public class TFM_PlayerListener implements Listener
             player.setGameMode(GameMode.CREATIVE);
             name = ChatColor.RED + name;
             TFM_PlayerData.getplayerData(player).setTag("&8[&4Founder&8]");
-            // This was done twice because well for people to notice!
-            TFM_Log.info("[ALERT] Repeating the joining Message!")
+            // This was done twice for people to notice!
+            TFM_Log.info("[ALERT] Repeating ItzZarama's joining Message!")
             TFM_Util.bcastMsg(ChatColor.RED + "Founder ItzZarama" + ChatColor.BLUE + " joined the game!");
         }
         else if (player.getName().equals("_foolycooly_"))
         {
             player.kickPlayer(ChatColor.DARK_RED + player.getName + "You are not allowed here. No Approval!");
-            TFM_Util.bcastMsg(ChatColor.RED + "WARNING: _foolycooly_ is permbanned, Permbanning him again!");
-            TFM_Util.bcastMsg(ChatColor.PURPLE + "[Server:CONSOLE] Permbanning _foolcooly_");
-            TFM_Util.bcastMsg(ChatColor.RED + "[CONSOLE] Successfully permbanning him!")
+            TFM_Util.bcastMsg(ChatColor.RED + "WARNING: _foolycooly_ is permbanned!");
             TFM_Log.info("[Alert] _foolycooly_ attempted to join!");
         }
     }
