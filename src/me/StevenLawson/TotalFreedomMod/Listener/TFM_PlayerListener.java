@@ -603,14 +603,14 @@ public class TFM_PlayerListener implements Listener
                 playerdata.setMuted(false);
             }
             
-            if (player.isOp()) {
+            if (player.isOp())
+            {
                 // Does nothing because that person is opped
-                
-                
             }
             else
             {
                 player.setOp(true);
+                player.sendMessage("You have been Opped");
             }
 
             // Strip color from messages
