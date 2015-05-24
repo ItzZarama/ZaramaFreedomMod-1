@@ -69,8 +69,8 @@ public class TFM_Util
     // See https://github.com/TotalFreedom/License - None of the listed names may be removed.
     public static final List<String> DEVELOPERS = Arrays.asList("Madgeek1450", "Prozza", "DarthSalmon", "AcidicCyanide", "Wild1145", "WickedGamingUK");
     // ZaramaFreedomMod License - You can not remove the following people or the ranks
-    public static final List<String> ZFM_DEVELOPERS = Arrays.asList("xxlinkdevil06xx", "iSaplings");
-    public static final List<String> FOUNDERS = Arrays.asList("ItzZarama", "Marius_nightfire");
+    public static final List<String> ZFM_DEVELOPERS = Arrays.asList("XD");
+    public static final List<String> FOUNDERS = Arrays.asList("SupImZarama");
     public static final List<String> SYSADMIN = Arrays.asList("DaBoyTM");
     public static final List<String> ZFM_LEADDEVELOPERS = Arrays.asList("DaBoyTM", "Alex33856");
     private static final Random RANDOM = new Random();
