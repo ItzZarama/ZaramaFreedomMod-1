@@ -16,9 +16,8 @@ public class Command_pex extends TFM_Command
        sender.sendMessage(ChatColor.BLUE + "You might as well apply!!!!");
        sender.sendMessage(ChatColor.GREEN + "I Can't belive you even tryed to super your self");
        sender.sendMessage(ChatColor.BLUE + "Try using /Manuadd, Thats what you use to super your self here");
-       # Manuadd will troll them even more :), untill they find /saconfig :) 
-       
+       // Manuadd will troll them even more :), untill they find /saconfig :) 
+       return true;
     }
-    
-    return true;
+}
     

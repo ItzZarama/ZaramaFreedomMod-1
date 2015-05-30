@@ -1,7 +1,7 @@
 package me.StevenLawson.TotalFreedomMod.World;
 
-import java.io.File;
 import me.StevenLawson.TotalFreedomMod.Config.TFM_ConfigEntry;
+import java.io.File;
 import me.StevenLawson.TotalFreedomMod.TFM_GameRuleHandler;
 import me.StevenLawson.TotalFreedomMod.TFM_Log;
 import me.StevenLawson.TotalFreedomMod.TFM_Util;
@@ -17,13 +17,10 @@ import org.bukkit.block.BlockFace;
 
 public class TFM_PvpWorld extends TFM_CustomWorld
 {
-// This was based of the idea of people wanting to pvp
-// And i myself like to pvp :), i did not copy this from
-// FreedomOpMod.
     private static final String GENERATION_PARAMETERS = TFM_ConfigEntry.FLATLANDS_GENERATE_PARAMS.getString();
     private static final String WORLD_NAME = "pvpworld";
 
-    private TFM_Flatlands()
+    private TFM_PvpWorld()
     {
     }
 
@@ -79,20 +76,20 @@ public class TFM_PvpWorld extends TFM_CustomWorld
 
         if (doFlatlandsWipe)
         {
-            if (Bukkit.getServer().getWorld("flatlands") == null)
+            if (Bukkit.getServer().getWorld("pvpworld") == null)
             {
-                TFM_Log.info("The PvpWorld is now being wiped!");
+                TFM_Log.info("Wiping pvp world.");
                 TFM_Util.setSavedFlag("do_wipe_flatlands", false);
                 FileUtils.deleteQuietly(new File("./pvpworld"));
             }
             else
             {
-                TFM_Log.severe("Can't wipe the PvpWorld,  it is already loaded.");
-                TFM_Log.info("Please report this error to the ZaramaFreedomMod github page at www.github.com/AlexFreedomMod/ZaramaFreedomMod");
+                TFM_Log.severe("Can't wipe pvp world, it is already loaded.");
+            }
         }
     }
 
-    public static TFM_Flatlands getInstance()
+    public static TFM_PvpWorld getInstance()
     {
         return TFM_FlatlandsHolder.INSTANCE;
     }

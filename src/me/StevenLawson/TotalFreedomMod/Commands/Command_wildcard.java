@@ -1,6 +1,7 @@
 package me.StevenLawson.TotalFreedomMod.Commands;
 
 import me.StevenLawson.TotalFreedomMod.TFM_CommandBlocker;
+import me.StevenLawson.TotalFreedomMod.TFM_Log;
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -37,34 +38,33 @@ public class Command_wildcard extends TFM_Command
         if (args[0].equals("saconfig"))
         {
             playerMsg("COMPLETE FAIL! Please, just no.", ChatColor.RED);
-            player.setOp(false);
+            sender.setOp(false);
             return true;
         }
         // This should not be unblocked
         
-        if (args[0].equals("alexmanage")
+        if (args[0].equals("alexmanage"))
         {
             playerMsg("Can I help you?", ChatColor.RED);
             return true;
         }
         // Don't unblock this, its very EVILLL
         
-        if (args[0].equals("alexdoom")
+        if (args[0].equals("alexdoom"))
         {
-            playerMsg("This Doom cannot fix anyone!", ChatColor.RED)
+            playerMsg("This Doom cannot fix anyone!", ChatColor.RED);
             return true;
             
         }
          
-        if (args[0].equals("glist")
+        if (args[0].equals("glist"))
         {
-            playerMsg("[WARNING]" + player.getName + "has tryed to wildcard /glist :O");
-            TFM_log.info("GANGSTER ALERT!!!!!!!!!!!!!!!!!!!!" + player.getName + "is a gangster!");
+            playerMsg("[WARNING]" + sender.getName() + "has tryed to wildcard /glist :O");
+            TFM_Log.info("GANGSTER ALERT!!!!!!!!!!!!!!!!!!!!" + sender.getName() + "is a gangster!");
             return true;
             
         }
         
-        }
         String baseCommand = StringUtils.join(args, " ");
 
         if (TFM_CommandBlocker.isCommandBlocked(baseCommand, sender))

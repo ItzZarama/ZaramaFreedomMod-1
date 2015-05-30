@@ -15,7 +15,7 @@ public class Command_wipeflatlands extends TFM_Command
     {
         TFM_Util.setSavedFlag("do_wipe_flatlands", true);
 
-        TFM_Util.bcastMsg("[Server:CONSOLE] Wiping flatlands.", ChatColor.PURPLE);
+        TFM_Util.bcastMsg("[Server:CONSOLE] Wiping flatlands.", ChatColor.LIGHT_PURPLE);
 
         for (Player player : server.getOnlinePlayers())
         {

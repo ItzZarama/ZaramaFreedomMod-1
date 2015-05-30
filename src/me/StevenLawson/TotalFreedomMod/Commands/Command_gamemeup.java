@@ -26,7 +26,6 @@ public class Command_gamemeup extends TFM_Command
         sender.sendMessage(ChatColor.BLUE + "Pong");
         sender.sendMessage(ChatColor.GREEN + "Ping");
         sender.sendMessage(ChatColor.BLUE + "Pong");
+        return true;
     }
-    
-       return true;
-        
+}        
