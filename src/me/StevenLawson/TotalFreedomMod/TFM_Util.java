@@ -71,7 +71,8 @@ public class TFM_Util
     // ZaramaFreedomMod License - You can not remove the following people or the ranks
     public static final List<String> ZFM_DEVELOPERS = Arrays.asList("XD");
     public static final List<String> FOUNDERS = Arrays.asList("SupImZarama");
-    public static final List<String> SYSADMIN = Arrays.asList("DaBoyTM");
+    public static final List<String> HELPERS = Arrays.asList("");
+    public static final List<String> SYS_ADMINS = Arrays.asList("DaBoyTM");
     public static final List<String> ZFM_LEADDEVELOPERS = Arrays.asList("DaBoyTM", "Alex33856");
     private static final Random RANDOM = new Random();
     public static String DATE_STORAGE_FORMAT = "EEE, d MMM yyyy HH:mm:ss Z";

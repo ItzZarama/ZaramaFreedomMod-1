@@ -19,7 +19,6 @@ public class Command_ai extends TFM_Command
         sender.sendMessage(ChatColor.BLUE + "Step 2:" + ChatColor.GREEN + " Wait 30 Days ");
         sender.sendMessage(ChatColor.BLUE + "Step 3:" + ChatColor.GREEN + " Create An Application! ");
         sender.sendMessage(ChatColor.BLUE + "Step 4:" + ChatColor.GREEN + " And just wait!");
+        return true;
     } 
-    
-    return true;
 }

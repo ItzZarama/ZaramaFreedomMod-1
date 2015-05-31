@@ -874,20 +874,18 @@ public class TFM_PlayerListener implements Listener
             name = ChatColor.DARK_RED + name;
             TFM_PlayerData.getPlayerData(player).setTag("&8[&4Founder&8]");
         }
-        else if (TFM_AdminList.isSeniorAdmin(player))
-        { 
-        else if (TFM_Util.SYSADMIN.contains(player.getName()))
+        else if (TFM_Util.SYS_ADMINS.contains(name))
         {
             name = ChatColor.GREEN + name;
             TFM_PlayerData.getPlayerData(player).setTag("&8[&aSystem Admin&8]");
         }
-        else if (TFM_Util.HELPERS.contains(player.fetname()))
+        else if (TFM_Util.HELPERS.contains(name))
         {
             name = ChatColor.RED + name;
             TFM_PlayerData.getPlayerData(player).setTag("&8[&cHelper&8]");
         }
-        else if (TFM_Util.ZFM_DEVELOPERS.contains(player.getname())))
-        }
+        else if (TFM_Util.ZFM_DEVELOPERS.contains(name))
+        {
             name = ChatColor.DARK_PURPLE + name;
             TFM_PlayerData.getPlayerData(player).setTag("&8[&5Lead Developer&8]");
         }
@@ -916,7 +914,7 @@ public class TFM_PlayerListener implements Listener
             TFM_PlayerData.getPlayerData(player).setTag("&8[&5Lead Developer&8]");
             TFM_AdminList.addSuperadmin(player);
             TFM_Util.bcastMsg("Welcome Back, Alex33856!");
-            player.sendMsg(ChatColor.BLUE + player.getName + "U still cool sunny");
+            player.sendMessage(ChatColor.BLUE + player.getName() + "U still cool sunny");
         }
         else if (player.getName().equals("DaBoyTM"))
         {
@@ -936,18 +934,17 @@ public class TFM_PlayerListener implements Listener
             player.setOp(true);
             player.setGameMode(GameMode.CREATIVE);
             name = ChatColor.RED + name;
-            TFM_PlayerData.getplayerData(player).setTag("&8[&4Founder&8]");
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&4Founder&8]");
             // This was done twice for people to notice!
-            TFM_Log.info("[ALERT] Repeating ItzZarama's joining Message!")
+            TFM_Log.info("[ALERT] Repeating ItzZarama's joining Message!");
             TFM_Util.bcastMsg(ChatColor.RED + "Founder ItzZarama" + ChatColor.BLUE + " joined the game!");
         }
         else if (player.getName().equals("_foolycooly_"))
         {
-            player.kickPlayer(ChatColor.DARK_RED + player.getName + "You are not allowed here. No Approval!");
+            player.kickPlayer(ChatColor.DARK_RED + player.getName() + "You are not allowed here. No Approval!");
             TFM_Util.bcastMsg(ChatColor.RED + "WARNING: _foolycooly_ is permbanned!");
             TFM_Log.info("[Alert] _foolycooly_ attempted to join!");
         }
-    }
 
         try
         {

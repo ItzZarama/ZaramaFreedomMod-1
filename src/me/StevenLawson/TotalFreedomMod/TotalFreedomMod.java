@@ -19,6 +19,7 @@ import me.StevenLawson.TotalFreedomMod.Listener.TFM_TelnetListener;
 import me.StevenLawson.TotalFreedomMod.Listener.TFM_WeatherListener;
 import me.StevenLawson.TotalFreedomMod.World.TFM_AdminWorld;
 import me.StevenLawson.TotalFreedomMod.World.TFM_Flatlands;
+import me.StevenLawson.TotalFreedomMod.World.TFM_PvpWorld;
 import org.bukkit.Server;
 import org.bukkit.World;
 import org.bukkit.command.Command;
@@ -77,11 +78,11 @@ public class TotalFreedomMod extends JavaPlugin
         // Made it so there are diffent logs for them
         // Sadly it takes up more Log space
         TFM_Log.info("TFM LOG");
-        TFM_Log.info("TFM Made by Darthsalamon and Madgeek");
+        TFM_Log.info("TFM Made by Madgeek1450 and Prozza");
         TFM_Log.info("ZFM LOG");
         TFM_Log.info("ZFM Version: 2.7");
         TFM_Log.info("Compiled " + buildDate + " by " + buildCreator);
-        TFM_Log.info("Report all errors to https://github.com/AlexFreedomMod/ZaramaFreedomMod/issues")
+        TFM_Log.info("Report all errors to https://github.com/AlexFreedomMod/ZaramaFreedomMod/issues");
         final TFM_Util.MethodTimer timer = new TFM_Util.MethodTimer();
         timer.start();
 
@@ -179,7 +180,6 @@ public class TotalFreedomMod extends JavaPlugin
         // Start services
         TFM_ServiceChecker.start();
         TFM_HTTPD_Manager.start();
-        TFM_FrontDoor.start();
 
         timer.update();
 
@@ -214,22 +214,13 @@ public class TotalFreedomMod extends JavaPlugin
         TFM_HTTPD_Manager.stop();
         TFM_BanManager.save();
         TFM_UuidManager.close();
-        TFM_FrontDoor.stop();
 
         server.getScheduler().cancelTasks(plugin);
 
-        TFM_Log.info("TotalFreedomMod & ZaramaFreedommod have been disabled");
+        TFM_Log.info("TotalFreedomMod & ZaramaFreedomMod have been disabled");
         TFM_Log.info("Thanks for using both!");
     }
     
-    @Override
-    public void onEnable()
-    {
-        TFM_Log.info("TFM & ZFM Loaded.");
-        TFM_Log.info("[ZaramaFreedomBot] Everthing Loaded");
-        TFM_Log.info("[TIP] Did you know you can use /qop to help you if your not admin!");
-    }
-
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
     {
