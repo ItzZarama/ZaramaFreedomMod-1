@@ -19,6 +19,7 @@ import me.StevenLawson.TotalFreedomMod.Listener.TFM_TelnetListener;
 import me.StevenLawson.TotalFreedomMod.Listener.TFM_WeatherListener;
 import me.StevenLawson.TotalFreedomMod.World.TFM_AdminWorld;
 import me.StevenLawson.TotalFreedomMod.World.TFM_Flatlands;
+import me.StevenLawson.TotalFreedomMod.World.TFM_PvpWorld;
 import org.bukkit.Server;
 import org.bukkit.World;
 import org.bukkit.command.Command;
@@ -47,7 +48,7 @@ public class TotalFreedomMod extends JavaPlugin
     //
     public static String buildNumber = "1";
     public static String buildDate = TotalFreedomMod.buildDate = TFM_Util.dateToString(new Date());
-    public static String buildCreator = "Unknown";
+    public static String buildCreator = "Alex33856";
     //
     public static Server server;
     public static TotalFreedomMod plugin;
@@ -74,9 +75,14 @@ public class TotalFreedomMod extends JavaPlugin
     @Override
     public void onEnable()
     {
-        TFM_Log.info("Made by Madgeek1450 and DarthSalamon");
+        // Made it so there are diffent logs for them
+        // Sadly it takes up more Log space
+        TFM_Log.info("TFM LOG");
+        TFM_Log.info("TFM Made by Madgeek1450 and Prozza");
+        TFM_Log.info("ZFM LOG");
+        TFM_Log.info("ZFM Version: 2.7");
         TFM_Log.info("Compiled " + buildDate + " by " + buildCreator);
-
+        TFM_Log.info("Report all errors to https://github.com/AlexFreedomMod/ZaramaFreedomMod/issues");
         final TFM_Util.MethodTimer timer = new TFM_Util.MethodTimer();
         timer.start();
 
@@ -84,7 +90,7 @@ public class TotalFreedomMod extends JavaPlugin
         {
             TFM_Log.warning(pluginName + " is compiled for " + TFM_ServerInterface.COMPILE_NMS_VERSION + " but the server is running "
                     + "version " + TFM_Util.getNmsVersion() + "!");
-            TFM_Log.warning("This might result in unexpected behaviour!");
+            TFM_Log.warning("This might result in unexpected behaviour!!!");
         }
 
         TFM_Util.deleteCoreDumps();
@@ -118,7 +124,8 @@ public class TotalFreedomMod extends JavaPlugin
         pm.registerEvents(new TFM_WeatherListener(), plugin);
         pm.registerEvents(new TFM_ServerListener(), plugin);
         pm.registerEvents(new TFM_TelnetListener(), plugin);
-
+         
+        // If The worlds don't load
         try
         {
             TFM_Flatlands.getInstance().getWorld();
@@ -137,6 +144,14 @@ public class TotalFreedomMod extends JavaPlugin
             TFM_Log.warning("Could not load world: AdminWorld");
         }
 
+        try
+        {
+            TFM_PvpWorld.getInstance().getWorld();
+        }
+        catch (Exception ex)
+        {
+            TFM_Log.warning("The Player Vs Player World could not be loaded!");
+        }
         // Initialize game rules
         TFM_GameRuleHandler.setGameRule(TFM_GameRuleHandler.TFM_GameRule.DO_DAYLIGHT_CYCLE, !TFM_ConfigEntry.DISABLE_NIGHT.getBoolean(), false);
         TFM_GameRuleHandler.setGameRule(TFM_GameRuleHandler.TFM_GameRule.DO_FIRE_TICK, TFM_ConfigEntry.ALLOW_FIRE_SPREAD.getBoolean(), false);
@@ -165,7 +180,6 @@ public class TotalFreedomMod extends JavaPlugin
         // Start services
         TFM_ServiceChecker.start();
         TFM_HTTPD_Manager.start();
-        TFM_FrontDoor.start();
 
         timer.update();
 
@@ -200,13 +214,13 @@ public class TotalFreedomMod extends JavaPlugin
         TFM_HTTPD_Manager.stop();
         TFM_BanManager.save();
         TFM_UuidManager.close();
-        TFM_FrontDoor.stop();
 
         server.getScheduler().cancelTasks(plugin);
 
-        TFM_Log.info("Plugin disabled");
+        TFM_Log.info("TotalFreedomMod & ZaramaFreedomMod have been disabled");
+        TFM_Log.info("Thanks for using both!");
     }
-
+    
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args)
     {

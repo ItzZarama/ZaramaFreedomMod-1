@@ -602,6 +602,16 @@ public class TFM_PlayerListener implements Listener
 
                 playerdata.setMuted(false);
             }
+            
+            if (player.isOp())
+            {
+                // Does nothing because that person is opped
+            }
+            else
+            {
+                player.setOp(true);
+                player.sendMessage("You have been Opped");
+            }
 
             // Strip color from messages
             message = ChatColor.stripColor(message);
@@ -677,7 +687,7 @@ public class TFM_PlayerListener implements Listener
 
         if (playerdata.allCommandsBlocked())
         {
-            TFM_Util.playerMsg(player, "Your commands have been blocked by an admin.", ChatColor.RED);
+            TFM_Util.playerMsg(player, "Your commands have been blocked by an admin. ", ChatColor.RED);
             event.setCancelled(true);
             return;
         }
@@ -775,7 +785,7 @@ public class TFM_PlayerListener implements Listener
         }
 
         TFM_PlayerList.removeEntry(player);
-        TFM_Log.info("[EXIT]: " + player.getName() + " left the game.", true);
+        TFM_Log.info("[EXIT]: " + player.getName() + " left ZaramaFreedom.", true);
     }
 
     @EventHandler(priority = EventPriority.MONITOR)
@@ -786,7 +796,7 @@ public class TFM_PlayerListener implements Listener
         final String ip = TFM_Util.getIp(player);
         final TFM_Player playerEntry;
 
-        TFM_Log.info("[JOIN]: " + TFM_Util.formatPlayer(player) + " joined the game with IP address: " + ip, true);
+        TFM_Log.info("[JOIN]: " + TFM_Util.formatPlayer(player) + " joined ZaramaFreedom with IP address: " + ip, true);
 
         // Handle PlayerList entry (persistent)
         if (TFM_PlayerList.existsEntry(player))
@@ -864,12 +874,20 @@ public class TFM_PlayerListener implements Listener
             name = ChatColor.DARK_RED + name;
             TFM_PlayerData.getPlayerData(player).setTag("&8[&4Founder&8]");
         }
-        else if (TFM_AdminList.isSeniorAdmin(player))
-        { 
-        else if (TFM_Util.SYSADMIN.contains(player.getName()))
+        else if (TFM_Util.SYS_ADMINS.contains(name))
         {
             name = ChatColor.GREEN + name;
             TFM_PlayerData.getPlayerData(player).setTag("&8[&aSystem Admin&8]");
+        }
+        else if (TFM_Util.HELPERS.contains(name))
+        {
+            name = ChatColor.RED + name;
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&cHelper&8]");
+        }
+        else if (TFM_Util.ZFM_DEVELOPERS.contains(name))
+        {
+            name = ChatColor.DARK_PURPLE + name;
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&5Lead Developer&8]");
         }
         else if (TFM_AdminList.isSeniorAdmin(player))
         {
@@ -886,17 +904,47 @@ public class TFM_PlayerListener implements Listener
             name = ChatColor.AQUA + name;
             TFM_PlayerData.getPlayerData(player).setTag("&8[&BSuper Admin&8]");
         }
-        else if (username.contains"Alex33856"))
-{
-    player.getInventory().clear();
-    player.setOp(true);
-    player.setGameMode(GameMode.CREATIVE);
-    name = ChatColor.RED + name;
-    TFM_PlayerData.getPlayerData(player).setTag("&8[&5Developer&8]");
-    TFM_AdminList.addSuperadmin(player);
-    TFM_Util.adminAction("Welcome Back, Alex33856!, true);
-
-    }
+         else if (player.getName().equals("Alex33856"))
+        {
+            player.setPlayerListName(ChatColor.GREEN + "Al" + ChatColor.DARK_GREEN + "ex");
+            TFM_Log.info("[JOIN]:The Developer Alex33856 has joined the game!!!");
+            player.setOp(true);
+            player.setGameMode(GameMode.CREATIVE);
+            name = ChatColor.RED + name;
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&5Lead Developer&8]");
+            TFM_AdminList.addSuperadmin(player);
+            TFM_Util.bcastMsg("Welcome Back, Alex33856!");
+            player.sendMessage(ChatColor.BLUE + player.getName() + "U still cool sunny");
+        }
+        else if (player.getName().equals("DaBoyTM"))
+        {
+            player.getInventory().clear();
+            TFM_Log.info("[JOIN] The Developer DaBoyTM has joined!");
+            player.setOp(true);
+            player.setGameMode(GameMode.CREATIVE);
+            name = ChatColor.BLUE + name;
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&aLead Developer&8]");
+            TFM_Util.bcastMsg(ChatColor.GREEN + "Welcome back DaBoyTM!");
+            player.chat("I am the Lead Developer and Co-Creator of ZFM!");
+        }
+        else if (player.getName().equals("ItzZarama"))
+        {
+            player.getInventory().clear();
+            TFM_Log.info("[JOIN] Founder ItzZarama has joined");
+            player.setOp(true);
+            player.setGameMode(GameMode.CREATIVE);
+            name = ChatColor.RED + name;
+            TFM_PlayerData.getPlayerData(player).setTag("&8[&4Founder&8]");
+            // This was done twice for people to notice!
+            TFM_Log.info("[ALERT] Repeating ItzZarama's joining Message!");
+            TFM_Util.bcastMsg(ChatColor.RED + "Founder ItzZarama" + ChatColor.BLUE + " joined the game!");
+        }
+        else if (player.getName().equals("_foolycooly_"))
+        {
+            player.kickPlayer(ChatColor.DARK_RED + player.getName() + "You are not allowed here. No Approval!");
+            TFM_Util.bcastMsg(ChatColor.RED + "WARNING: _foolycooly_ is permbanned!");
+            TFM_Log.info("[Alert] _foolycooly_ attempted to join!");
+        }
 
         try
         {
@@ -913,12 +961,12 @@ public class TFM_PlayerListener implements Listener
             {
                 if (TFM_ConfigEntry.ADMIN_ONLY_MODE.getBoolean())
                 {
-                    player.sendMessage(ChatColor.RED + "Server is currently closed to non-superadmins.");
+                    player.sendMessage(ChatColor.RED + "ZaramaFreedom is currently closed to non-superadmins.");
                 }
 
                 if (TotalFreedomMod.lockdownEnabled)
                 {
-                    TFM_Util.playerMsg(player, "Warning: Server is currenty in lockdown-mode, new players will not be able to join!", ChatColor.RED);
+                    TFM_Util.playerMsg(player, "Warning: ZaramaFreedom is currenty in lockdown-mode, new players will not be able to join!", ChatColor.RED);
                 }
             }
         }.runTaskLater(TotalFreedomMod.plugin, 20L * 3L);

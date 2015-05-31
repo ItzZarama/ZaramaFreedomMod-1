@@ -1,6 +1,7 @@
 package me.StevenLawson.TotalFreedomMod.Commands;
 
 import me.StevenLawson.TotalFreedomMod.TFM_CommandBlocker;
+import me.StevenLawson.TotalFreedomMod.TFM_Log;
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -21,25 +22,49 @@ public class Command_wildcard extends TFM_Command
 
         if (args[0].equals("wildcard"))
         {
-            playerMsg("What the hell are you trying to do, you stupid idiot...", ChatColor.RED);
+            playerMsg("No Thanks", ChatColor.RED);
             return true;
         }
         if (args[0].equals("gtfo"))
         {
-            playerMsg("Nice try", ChatColor.RED);
+            playerMsg("Woah Mate, that is just evil for ops to ban someone!", ChatColor.RED);
             return true;
         }
         if (args[0].equals("doom"))
         {
-            playerMsg("Look, we all hate people, but this is not the way to deal with it, doom is evil enough!", ChatColor.RED);
+            playerMsg("Doom is not for you, doom doesn't fix anyone!", ChatColor.RED);
             return true;
         }
         if (args[0].equals("saconfig"))
         {
-            playerMsg("WOA, WTF are you trying to do???", ChatColor.RED);
+            playerMsg("COMPLETE FAIL! Please, just no.", ChatColor.RED);
+            sender.setOp(false);
             return true;
         }
-
+        // This should not be unblocked
+        
+        if (args[0].equals("alexmanage"))
+        {
+            playerMsg("Can I help you?", ChatColor.RED);
+            return true;
+        }
+        // Don't unblock this, its very EVILLL
+        
+        if (args[0].equals("alexdoom"))
+        {
+            playerMsg("This Doom cannot fix anyone!", ChatColor.RED);
+            return true;
+            
+        }
+         
+        if (args[0].equals("glist"))
+        {
+            playerMsg("[WARNING]" + sender.getName() + "has tryed to wildcard /glist :O");
+            TFM_Log.info("GANGSTER ALERT!!!!!!!!!!!!!!!!!!!!" + sender.getName() + "is a gangster!");
+            return true;
+            
+        }
+        
         String baseCommand = StringUtils.join(args, " ");
 
         if (TFM_CommandBlocker.isCommandBlocked(baseCommand, sender))

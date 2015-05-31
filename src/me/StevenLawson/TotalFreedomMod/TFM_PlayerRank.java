@@ -2,27 +2,31 @@ package me.StevenLawson.TotalFreedomMod;
 
 import me.StevenLawson.TotalFreedomMod.Config.TFM_ConfigEntry;
 import static me.StevenLawson.TotalFreedomMod.TFM_Util.DEVELOPERS;
-import static me.StevenLawson.TotalFreedom.TFM_Util.ZFM_DEVELOPERS;
-import static me.StevenLawson.TotalFreedom.TFM_Util.FOUNDERS;
-import static me.StevenLawson.TotalFreedom.TFM_Util.SYSADMIN;
+import static me.StevenLawson.TotalFreedomMod.TFM_Util.FOUNDERS;
+import static me.StevenLawson.TotalFreedomMod.TFM_Util.HELPERS;
+import static me.StevenLawson.TotalFreedomMod.TFM_Util.SYS_ADMINS;
+import static me.StevenLawson.TotalFreedomMod.TFM_Util.ZFM_DEVELOPERS;
+import static me.StevenLawson.TotalFreedomMod.TFM_Util.ZFM_LEADDEVELOPERS;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 public enum TFM_PlayerRank
 {
-    DEVELOPER("a " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[Dev]"),
-    IMPOSTOR("an " + ChatColor.YELLOW + ChatColor.UNDERLINE + "Impostor", ChatColor.YELLOW.toString() + ChatColor.UNDERLINE + "[IMP]"),
+    DEVELOPER("A " + ChatColor.DARK_PURPLE + "Developer", ChatColor.DARK_PURPLE + "[Dev]"),
+    IMPOSTOR("An " + ChatColor.YELLOW + ChatColor.UNDERLINE + "Impostor", ChatColor.YELLOW.toString() + ChatColor.UNDERLINE + "[IMP]"),
     NON_OP("a " + ChatColor.GREEN + "Non-OP", ChatColor.GREEN.toString()),
-    OP("an " + ChatColor.RED + "OP", ChatColor.RED + "[OP]"),
-    SUPER("a " + ChatColor.GOLD + "Super Admin", ChatColor.GOLD + "[SA]"),
-    TELNET("a " + ChatColor.DARK_GREEN + "Super Telnet Admin", ChatColor.DARK_GREEN + "[STA]"),
-    SENIOR("a " + ChatColor.LIGHT_PURPLE + "Senior Admin", ChatColor.LIGHT_PURPLE + "[SrA]"),
-    OWNER("the " + ChatColor.BLUE + "Owner", ChatColor.BLUE + "[Owner]"),
+    OP("An " + ChatColor.RED + "OP", ChatColor.RED + "[Operator]"),
+    SUPER("A " + ChatColor.GOLD + "Super Admin", ChatColor.GOLD + "[SA]"),
+    HELPER("A " + ChatColor.GOLD + "Helper", ChatColor.GOLD + "[Helper]"),
+    TELNET("A " + ChatColor.DARK_GREEN + "Super Telnet Admin", ChatColor.DARK_GREEN + "[STA]"),
+    SENIOR("A " + ChatColor.LIGHT_PURPLE + "Senior Admin", ChatColor.LIGHT_PURPLE + "[SrA]"),
+    OWNER("The " + ChatColor.BLUE + "Owner", ChatColor.BLUE + "[Owner]"),
     CONSOLE("The " + ChatColor.DARK_PURPLE + "Console", ChatColor.DARK_PURPLE + "[Console]"),
-    ZFM_DEVELOPERS("a " + ChatColor.DARK_PURPLE + "Creator of ZFM", ChatColor.DARK_PURPLE + "[Developer]",
-    FOUNDERS("The " + ChatColor.DARK_RED + "Founder Of Zarama Freedom", ChatColor.DARK_RED + "[Founder]",
-    SYSADMIN("A " + ChatColor.GREEN + "System Admin", ChatColor.GREEN + "[SysAdmin]);
+    ZFM_DEVELOPER("a " + ChatColor.DARK_PURPLE + "Developer!", ChatColor.DARK_PURPLE + "[Developer]"),
+    FOUNDER("The " + ChatColor.DARK_RED + "Founder Of Zarama Freedom", ChatColor.DARK_RED + "[Founder]"),
+    SYSADMIN("A " + ChatColor.GREEN + "System Admin", ChatColor.GREEN + "[SysAdmin]"),
+    ZFM_LEADDEVELOPER("the" + ChatColor.DARK_PURPLE + "Lead Developer!", ChatColor.DARK_PURPLE + "[Lead Developer]");
     private final String loginMessage;
     private final String prefix;
 
@@ -76,16 +80,31 @@ public enum TFM_PlayerRank
             return DEVELOPER;
         }
         
-        if (ZFM_DEVELOPERS.contains(sender.getName()))
+        else if (ZFM_DEVELOPERS.contains(sender.getName()))
         {
-            return ZFM_DEVELOPERS;
+            return ZFM_DEVELOPER;
         }
         
-        if (FOUNDERS.contains(sender.getName()))
+        else if (FOUNDERS.contains(sender.getName()))
         {
-            return FOUNDERS;
+            return FOUNDER;
         }
-
+         
+        else if (SYS_ADMINS.contains(sender.getName()))
+        {
+            return SYSADMIN;
+        }
+        
+        else if (HELPERS.contains(sender.getName()))
+        {
+            return HELPER;
+        }
+         
+        else if (ZFM_LEADDEVELOPERS.contains(sender.getName()))
+        {
+            return ZFM_LEADDEVELOPER;
+        }
+        
         final TFM_Admin entry = TFM_AdminList.getEntryByIp(TFM_Util.getIp((Player) sender));
 
         final TFM_PlayerRank rank;

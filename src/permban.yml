@@ -1,10 +1,20 @@
 #
 # Permanent Bans
 #
+# Please follow the format.
+# or else this will not work
+# exampleplayer:
+#   - 123.123.123.123
+#   - 321.321.321.321
+#
 
-badplayer1:
+
+
+johnthegriefer:
   - 123.123.123.123
   - 321.321.321.321
-badplayer2:
+troll:
   - 111.111.111.111
-badplayer3: []
+  - 225.999.752.259
+noooch: 
+  - 209.140.206.190

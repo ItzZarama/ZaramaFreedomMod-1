@@ -1,6 +1,6 @@
 #
-# TotalFreedomMod v4.3 Configuration
-# by Madgeek1450 and Prozza
+# ZaramaFreedomMod v2.6 Configuration
+# by Madgeek1450, Prozza, DaBoyTM and Alex3368
 #
 
 # Generic server information
@@ -9,7 +9,7 @@ server:
   name: ZaramaFreedom
 
   # The address your server is located at. Please do not include the port.
-  address: zaramafreedom.no-ip.org:10042
+  address: zaramafreedom.no-ip.org
 
   # Shown at the server list
   motd: ZaramaFreedom &8- Minecraft %mcversion%
@@ -35,7 +35,7 @@ forceip:
   port: 10042
 
   # The kick message sent to players when logging in with the wrong hostname
-  kickmsg: You have been kicked from the server - Please connect using %address%
+  kickmsg: This Ip has been disabled. - Please connect using %address%
 
 
 # Blocking certain events
@@ -84,15 +84,15 @@ allow:
 #
 blocked_commands:
   # Disabled commands
-  - 'n:b:/time:Server-side time changing is disabled. Please use /ptime to set your own personal time.'
-  - 'n:b:/gamemode:Use /creative and /survival to set your gamemode.'
+  - 'n:b:/time:&cERROR: Server-side time changing is disabled. &7Usage: /ptime.'
+  - 'n:b:/gamemode:Usage: /creative and /survival to set your gamemode.'
   - 'n:b:/gamerule:_'
   - 'n:b:/ban:_'
   - 'n:b:/pardon:_'
   - 'n:b:/ban-ip:_'
   - 'n:b:/pardon-ip:_'
   - 'n:b:/toggledownfall:_'
-  - 'n:b:/effect:Please use /potion to set effects.'
+  - 'n:b:/effect:Usage: /potion to set effects.'
   - 'n:b:/enderchest:_'
   - 'n:b:/spreadplayers:_'
 
@@ -220,9 +220,9 @@ announcer:
     - 'You may view all online administrators via "/list -a"'
     - 'Save your buildings via WorldEdit!  ZaramaFreedom.proboards.com for more information!'
     - 'Famous players, such as Notch, are always fake!  We are an offline/cracked server!'
-    - 'You may contact TotalFreedoms Support on Twitter!  https://twitter.com/ZaramaPlaysMC'
+    - 'You may contact ZaramaFreedomMods Support on Twitter!  https://twitter.com/ZaramaPlaysMC'
     - 'You may download TotalFreedomMod here: pravi.us/V8c'
-    - 'ItzZarama is ZaramaFreedoms owner.'
+    - 'SupItsZarama is ZaramaFreedoms owner.'
     - 'Server lagging?  Check the lag via "/tps"'
     - 'You are allowed to record and stream videos on ZaramaFreedom :D'
     - 'An admin abusing?  Report it! pravi.us/vfa'
@@ -232,6 +232,8 @@ announcer:
     - 'Serial griefing and trolling will result in permanently being banned!'
     - 'ZaramaFreedom does not accept any form of donations!'
     - 'Racism, Nazism, and Sexism is strictly forbidden!'
+    - 'ZaramaFreedom is using a custom version of TotalFreedomMod!'
+    - 'Invite all your friends :)'
 
 # Players who cannot be banned by username
 unbannable_usernames:
@@ -309,4 +311,5 @@ autokick:
   threshold: 0.9
 
   # autokick_time - Time, in seconds, after which a player should be kicked when inactive
-  time: 120
+  # You might not want to mess with this, this has been changed to 4 Minutes.
+  time: 240
