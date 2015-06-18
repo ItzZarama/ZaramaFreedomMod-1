@@ -15,12 +15,12 @@ import org.bukkit.WorldType;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 
-public class TFM_PvpWorld extends TFM_CustomWorld
+public class ZFM_PvpWorld extends TFM_CustomWorld
 {
     private static final String GENERATION_PARAMETERS = TFM_ConfigEntry.FLATLANDS_GENERATE_PARAMS.getString();
     private static final String WORLD_NAME = "pvpworld";
 
-    private TFM_PvpWorld()
+    private ZFM_PvpWorld()
     {
     }
 
@@ -89,13 +89,13 @@ public class TFM_PvpWorld extends TFM_CustomWorld
         }
     }
 
-    public static TFM_PvpWorld getInstance()
+    public static ZFM_PvpWorld getInstance()
     {
         return TFM_FlatlandsHolder.INSTANCE;
     }
 
     private static class TFM_FlatlandsHolder
     {
-        private static final TFM_PvpWorld INSTANCE = new TFM_PvpWorld();
+        private static final ZFM_PvpWorld INSTANCE = new ZFM_PvpWorld();
     }
 }
