@@ -1,7 +1,7 @@
 package me.StevenLawson.TotalFreedomMod.Commands;
 
 import me.StevenLawson.TotalFreedomMod.Config.TFM_ConfigEntry;
-import me.StevenLawson.TotalFreedomMod.World.TFM_PvpWorld;
+import me.StevenLawson.TotalFreedomMod.World.ZFM_PvpWorld;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.command.Command;
@@ -17,16 +17,16 @@ public class Command_pvpworld extends TFM_Command
     {
         if (TFM_ConfigEntry.FLATLANDS_GENERATE.getBoolean())
         {
-            TFM_PvpWorld.getInstance().sendToWorld(sender_p);
+            ZFM_PvpWorld.getInstance().sendToWorld(sender_p);
             sender_p.setOp(false);
-            sender_p.sendMessage(ChatColor.RED + "To pvp we hoped you had your stuff all ready :/");
-            sender_p.sendMessage(ChatColor.GRAY + sender.getName() + "has put you in survival!");
+            sender_p.sendMessage(ChatColor.RED + "If you dont have your stuff ready yet... then sorry ");
+            sender_p.sendMessage(ChatColor.GRAY + sender.getName() + ", you have been deoped and put in survival to pvp");
             sender_p.setGameMode(GameMode.SURVIVAL);
         }
         else
         {
-            playerMsg("Sorry, the Pvp world is disabled");
-            playerMsg("Please report this issue to the Developers");
+            playerMsg("Sorry, mate. Pvpworld is disabled ");
+            playerMsg("If it is enabled and this is happening report it to a developer");
         }
         return true;
     }
